@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Planet Stats</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js'>
+            'use strict';
+        </script>
+        <style>
+            #body {
+                position: absolute;
+                left: 2.5%;
+                width: 95%;
+                height: 100%;
+            }
+            #c1 {
+                position: inherit; left: 0%; top: 0%;
+                width: 50%; height: 40%;
+            }
+            #c2 {
+                position: inherit; left: 50%; top: 0%;
+                width: 50%; height: 40%;
+            }
+            #c3 {
+                position: inherit; left: 0%; top: 40%;
+                width: 50%; height: 40%;
+            }
+            #c4 {
+                position: inherit; left: 50%; top: 40%;
+                width: 50%; height: 40%;
+            }
+            #c5 {
+                position: inherit; left: 0%; top: 80%;
+                width: 50%; height: 40%;
+            }
+            #c6 {
+                position: inherit; left: 50%; top: 80%;
+                width: 50%; height: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="body">
+            <div id="c1">
+                <canvas id="distChart"></canvas>
+            </div>
+            <div id="c2">
+                <canvas id="diamChart"></canvas>
+            </div>
+            <div id="c3">
+                <canvas id="massChart"></canvas>
+            </div>
+            <div id="c4">
+                <canvas id="tempChart"></canvas>
+            </div>
+            <div id="c5">
+                <canvas id="daysChart"></canvas>
+            </div>
+            <div id="c6">
+                <canvas id="yearsChart"></canvas>
+            </div>
+        </div>
+        <script>
+            //  GLOBAL DEFAULTS
+            Chart.defaults.global.responsive = true;
+            const
+                defaultColor = 'rgba( 192, 57, 43, 1.0 )',
+                planetList   = [ 'Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Vesta', 'Ceres', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto' ],
+                phBkgrdColor = [
+                                    'rgba( 255, 0, 0, 0.75 )', // Sun
+                                    'rgba( 255, 150, 150, 0.75 )', // Mercury
+                                    'rgba( 255, 150, 0, 0.75 )', // Venus
+                                    'rgba( 0, 255, 0, 0.75 )', // Earth
+                                    'rgba( 255, 0, 0, 0.75 )', // Mars
+                                    'rgba( 100, 100, 100, 0.75 )', // Vesta
+                                    'rgba( 200, 150, 20, 0.75 )', // Ceres
+                                    'rgba( 255, 220, 0, 0.75 )', // Jupiter
+                                    'rgba( 255, 255, 0, 0.75 )', // Saturn
+                                    'rgba( 0, 200, 255, 0.75 )', // Uranus
+                                    'rgba( 0, 20, 255, 0.75 )', // Neptune
+                                    'rgba( 142, 68, 173, 0.75 )' // Pluto
+                              ],
+                hoverRadii  = [ 17, 4, 7, 10, 8, 3, 3, 12, 10, 8, 7, 5 ];
+
+            /**
+             *  AVERAGE ORBITAL DISTANCE CHART
+             */
+            let cta = document.getElementById( 'distChart' );
+            let a = new Chart( cta, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Average Orbital Distance (km × 10^5)',
+                            data: [ 0, 579, 1082, 1496, 2279, 3533.6, 4140.2, 7783, 14290, 28710, 44980, 59150 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 160, 80, 45, 1.0 )'
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'km'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+            let ctb = document.getElementById( 'diamChart' );
+            let b = new Chart( ctb, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Diameter (km × 10³)',
+                            data: [ 1391.4, 4.880, 12.104, 12.756, 6.794, 0.5254, 0.9392, 142.984, 120.536, 51.118, 49.528, 2.368 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 250, 57, 43, 1.0 )'
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    max: 150, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'km'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+            let ctc = document.getElementById( 'massChart' );
+            let c = new Chart( ctc, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Mass (kg)',
+                            data: [ 1.99e+30, 3.285e+23, 4.87e+24, 5.97e+24, 6.42e+23, 2.59e+20, 8.96e+20, 1.90e+27, 5.68e+26, 8.68e+25, 1.02e+26, 1.31e+22 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 50, 200, 50, 1.0 )'
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    // max: 1.5e+27,
+                                    max: 6.0e+26,
+                                    // min: 10e+20,
+                                    // min: 0,
+                                    callback: ( value, index, ticks ) => { return value.toPrecision( 2 ) + 'kg'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+            let ctd = document.getElementById( 'tempChart' );
+            let d = new Chart( ctd, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Surface Temperature (ºk)',
+                            data: [ 5800, 452.00, 737.00, 287.00, 218.15, 142.70, 130.00, 125.40, 93.15, 49.15, 55.00, 55.00 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: defaultColor
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    max: 800, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'ºk'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+            let cte = document.getElementById( 'daysChart' );
+            let e = new Chart( cte, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Orbital Days (days)',
+                            data: [ null, 88, 224.7, 365, 687, 1325, 1680.1, 4328, 10759, 29904, 60190, 90520 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 0, 20, 255, 0.75 )'
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    min: 0, max: 60000, callback: ( value, index, ticks ) => { return value + 'd'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+            let ctf = document.getElementById( 'yearsChart' );
+            let f = new Chart( ctf, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Orbital Years (years)',
+                            data: [ null, 0.24, 0.60, 1.0, 1.88, 3.63, 4.60, 11.86, 29.40, 84.00, 164.80, 248.00 ],
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 80, 200, 250, 1.0 )'
+                        } ]
+                    },
+                    options: {
+                        scales: {
+                            yAxes: [ {
+                                ticks: {
+                                    max: 250, callback: ( value, index, ticks ) => { return value + 'y'; }
+                                }
+                            } ]
+                        }
+                    }
+            } );
+
+        </script>
+    </body>
+</html>
