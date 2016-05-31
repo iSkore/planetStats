@@ -13,52 +13,31 @@
                 width: 95%;
                 height: 100%;
             }
-            #c1 {
-                position: inherit; left: 0%; top: 0%;
-                width: 50%; height: 40%;
-            }
-            #c2 {
-                position: inherit; left: 50%; top: 0%;
-                width: 50%; height: 40%;
-            }
-            #c3 {
-                position: inherit; left: 0%; top: 40%;
-                width: 50%; height: 40%;
-            }
-            #c4 {
-                position: inherit; left: 50%; top: 40%;
-                width: 50%; height: 40%;
-            }
-            #c5 {
-                position: inherit; left: 0%; top: 80%;
-                width: 50%; height: 40%;
-            }
-            #c6 {
-                position: inherit; left: 50%; top: 80%;
-                width: 50%; height: 40%;
-            }
+            #c1 { position: inherit; left: 0%; top: 0%; width: 50%; height: 40%; }
+            #c2 { position: inherit; left: 50%; top: 0%; width: 50%; height: 40%; }
+            #c3 { position: inherit; left: 0%; top: 40%; width: 50%; height: 40%; }
+            #c4 { position: inherit; left: 50%; top: 40%; width: 50%; height: 40%; }
+            #c5 { position: inherit; left: 0%; top: 80%; width: 50%; height: 40%; }
+            #c6 { position: inherit; left: 50%; top: 80%; width: 50%; height: 40%; }
+            #c7 { position: inherit; left: 0%; top: 120%; width: 50%; height: 40%; }
+            #c8 { position: inherit; left: 50%; top: 120%; width: 50%; height: 40%; }
+            #c9 { position: inherit; left: 0%; top: 160%; width: 50%; height: 40%; }
+            #c10 { position: inherit; left: 50%; top: 160%; width: 50%; height: 40%; }
+            #m { position: inherit; left: 0%; top: 210%; width: 100%; height: 50%; }
         </style>
     </head>
     <body>
         <div id="body">
-            <div id="c1">
-                <canvas id="distChart"></canvas>
-            </div>
-            <div id="c2">
-                <canvas id="diamChart"></canvas>
-            </div>
-            <div id="c3">
-                <canvas id="massChart"></canvas>
-            </div>
-            <div id="c4">
-                <canvas id="tempChart"></canvas>
-            </div>
-            <div id="c5">
-                <canvas id="daysChart"></canvas>
-            </div>
-            <div id="c6">
-                <canvas id="yearsChart"></canvas>
-            </div>
+            <div id="c1"><canvas id="distChart"></canvas></div>
+            <div id="c2"><canvas id="diamChart"></canvas></div>
+            <div id="c3"><canvas id="massChart"></canvas></div>
+            <div id="c4"><canvas id="tempChart"></canvas></div>
+            <div id="c5"><canvas id="daysChart"></canvas></div>
+            <div id="c6"><canvas id="yearsChart"></canvas></div>
+            <div id="c7"><canvas id="dayRotChart"></canvas></div>
+            <div id="c8"><canvas id="hoursRotChart"></canvas></div>
+            <div id="c9"><canvas id="axialChart"></canvas></div>
+            <div id="c10"><canvas id="inclinChart"></canvas></div>
         </div>
         <script>
             //  GLOBAL DEFAULTS
@@ -82,9 +61,17 @@
                               ],
                 hoverRadii  = [ 17, 4, 7, 10, 8, 3, 3, 12, 10, 8, 7, 5 ];
 
-            /**
-             *  AVERAGE ORBITAL DISTANCE CHART
-             */
+            let distData     = [ 0, 579, 1082, 1496, 2279, 3533.6, 4140.2, 7783, 14290, 28710, 44980, 59150 ],
+                diamData     = [ 1391.4, 4.880, 12.104, 12.756, 6.794, 0.5254, 0.9392, 142.984, 120.536, 51.118, 49.528, 2.368 ],
+                massData     = [ 1.99e+30, 3.285e+23, 4.87e+24, 5.97e+24, 6.42e+23, 2.59e+20, 8.96e+20, 1.90e+27, 5.68e+26, 8.68e+25, 1.02e+26, 1.31e+22 ],
+                tempData     = [ 5800, 452.00, 737.00, 287.00, 218.15, 142.70, 130.00, 125.40, 93.15, 49.15, 55.00, 55.00 ],
+                daysData     = [ null, 88, 224.7, 365, 687, 1325, 1680.1, 4328, 10759, 29904, 60190, 90520 ],
+                yearsData    = [ null, 0.24, 0.60, 1.0, 1.88, 3.63, 4.60, 11.86, 29.40, 84.00, 164.80, 248.00 ],
+                dayRotData   = [ 587.28, 1407.6, 2784.0, 24, 24.6, 31800, 40320, 9.9, 10.5, 17.2, 16.4, 153.36 ],
+                hoursRotData = [ 24.47, 58.65, 116, 1, 1.026, 1325, 1680, 0.4125, 0.43958, 0.7181, 0.683, 6.39 ],
+                axialData    = [ null, 0.034, 177.3, 23.5, 25, 29, 4, 3, 26.7, 97.77, 28.32, 112.5 ],
+                inclinData   = [ null, 7, 3.39, 0, 1.85, 7.14, 10.6, 1.304, 2.485, 0.773, 1.767, 17.14 ];
+
             let cta = document.getElementById( 'distChart' );
             let a = new Chart( cta, {
                     type: 'line',
@@ -92,23 +79,12 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Average Orbital Distance (km × 10^5)',
-                            data: [ 0, 579, 1082, 1496, 2279, 3533.6, 4140.2, 7783, 14290, 28710, 44980, 59150 ],
-                            pointBorderColor: defaultColor,
-                            pointBackgroundColor: phBkgrdColor,
-                            pointHoverRadius: hoverRadii,
-                            pointHoverBackgroundColor: phBkgrdColor,
-                            backgroundColor: 'rgba( 160, 80, 45, 1.0 )'
+                            data: distData,
+                            pointBorderColor: defaultColor, pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii, pointHoverBackgroundColor: phBkgrdColor, backgroundColor: 'rgba( 160, 80, 45, 1.0 )'
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'km'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { beginAtZero: true, callback: ( value, index, ticks ) => { return value + ' km'; } } } ] } }
             } );
 
             let ctb = document.getElementById( 'diamChart' );
@@ -118,7 +94,7 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Diameter (km × 10³)',
-                            data: [ 1391.4, 4.880, 12.104, 12.756, 6.794, 0.5254, 0.9392, 142.984, 120.536, 51.118, 49.528, 2.368 ],
+                            data: diamData,
                             pointBorderColor: defaultColor,
                             pointBackgroundColor: phBkgrdColor,
                             pointHoverRadius: hoverRadii,
@@ -126,15 +102,7 @@
                             backgroundColor: 'rgba( 250, 57, 43, 1.0 )'
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    max: 150, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'km'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { max: 150, beginAtZero: true, callback: ( value, index, ticks ) => { return value + ' km'; } } } ] } }
             } );
 
             let ctc = document.getElementById( 'massChart' );
@@ -144,7 +112,7 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Mass (kg)',
-                            data: [ 1.99e+30, 3.285e+23, 4.87e+24, 5.97e+24, 6.42e+23, 2.59e+20, 8.96e+20, 1.90e+27, 5.68e+26, 8.68e+25, 1.02e+26, 1.31e+22 ],
+                            data: massData,
                             pointBorderColor: defaultColor,
                             pointBackgroundColor: phBkgrdColor,
                             pointHoverRadius: hoverRadii,
@@ -152,19 +120,7 @@
                             backgroundColor: 'rgba( 50, 200, 50, 1.0 )'
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    // max: 1.5e+27,
-                                    max: 6.0e+26,
-                                    // min: 10e+20,
-                                    // min: 0,
-                                    callback: ( value, index, ticks ) => { return value.toPrecision( 2 ) + 'kg'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { max: 6.0e+26, callback: ( value, index, ticks ) => { return value.toPrecision( 2 ) + ' kg'; } } } ] } }
             } );
 
             let ctd = document.getElementById( 'tempChart' );
@@ -174,7 +130,7 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Surface Temperature (ºk)',
-                            data: [ 5800, 452.00, 737.00, 287.00, 218.15, 142.70, 130.00, 125.40, 93.15, 49.15, 55.00, 55.00 ],
+                            data: tempData,
                             pointBorderColor: defaultColor,
                             pointBackgroundColor: phBkgrdColor,
                             pointHoverRadius: hoverRadii,
@@ -182,15 +138,7 @@
                             backgroundColor: defaultColor
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    max: 800, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'ºk'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { max: 800, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'ºk'; } } } ] } }
             } );
 
             let cte = document.getElementById( 'daysChart' );
@@ -200,7 +148,7 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Orbital Days (days)',
-                            data: [ null, 88, 224.7, 365, 687, 1325, 1680.1, 4328, 10759, 29904, 60190, 90520 ],
+                            data: daysData,
                             pointBorderColor: defaultColor,
                             pointBackgroundColor: phBkgrdColor,
                             pointHoverRadius: hoverRadii,
@@ -208,15 +156,7 @@
                             backgroundColor: 'rgba( 0, 20, 255, 0.75 )'
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    min: 0, max: 60000, callback: ( value, index, ticks ) => { return value + 'd'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { min: 0, max: 60000, callback: ( value, index, ticks ) => { return value + ' d'; } } } ] } }
             } );
 
             let ctf = document.getElementById( 'yearsChart' );
@@ -226,7 +166,7 @@
                         labels: planetList,
                         datasets: [ {
                             label: 'Orbital Years (years)',
-                            data: [ null, 0.24, 0.60, 1.0, 1.88, 3.63, 4.60, 11.86, 29.40, 84.00, 164.80, 248.00 ],
+                            data: yearsData,
                             pointBorderColor: defaultColor,
                             pointBackgroundColor: phBkgrdColor,
                             pointHoverRadius: hoverRadii,
@@ -234,15 +174,79 @@
                             backgroundColor: 'rgba( 80, 200, 250, 1.0 )'
                         } ]
                     },
-                    options: {
-                        scales: {
-                            yAxes: [ {
-                                ticks: {
-                                    max: 250, callback: ( value, index, ticks ) => { return value + 'y'; }
-                                }
-                            } ]
-                        }
-                    }
+                    options: { scales: { yAxes: [ { ticks: { max: 250, callback: ( value, index, ticks ) => { return value + ' y'; } } } ] } }
+            } );
+
+            let ctg = document.getElementById( 'dayRotChart' );
+            let g = new Chart( ctg, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Period of Rotation (hours)',
+                            data: dayRotData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 205, 105, 0, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 40500, callback: ( value, index, ticks ) => { return value + ' h'; } } } ] } }
+            } );
+
+            let cth = document.getElementById( 'hoursRotChart' );
+            let h = new Chart( cth, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Period of Rotation (days)',
+                            data: hoursRotData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 255, 165, 0, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 120, callback: ( value, index, ticks ) => { return value + ' d'; } } } ] } }
+            } );
+
+            let cti = document.getElementById( 'axialChart' );
+            let i = new Chart( cti, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Axial Tilt (º)',
+                            data: axialData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 155, 89, 182, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 180, callback: ( value, index, ticks ) => { return value + ' º'; } } } ] } }
+            } );
+
+            let ctj = document.getElementById( 'inclinChart' );
+            let j = new Chart( ctj, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Inclination (º)',
+                            data: inclinData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 142, 68, 173, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 20, callback: ( value, index, ticks ) => { return value + ' º'; } } } ] } }
             } );
 
         </script>

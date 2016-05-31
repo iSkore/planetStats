@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Planet Stats</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.min.js'>
+            'use strict';
+        </script>
+        <style>
+            #body {
+                position: absolute;
+                left: 2.5%;
+                width: 95%;
+                height: 100%;
+            }
+            #options { position: inherit; left: 0%; top: 0%; width: 20%; height: 5%; }
+            #button { position: inherit; left: 0%; top: 5%; width: 20%; height: 5%; }
+            #m { position: inherit; left: 20%; top: 0%; width: 80%; height: 50%; }
+        </style>
+    </head>
+    <body>
+        <div id="body">
+            <form id="options">
+                <select id="o"></select><b> ~ VS ~ </b><select id="c"></select>
+            </form>
+            <br/><br/>
+            <button id="button" type="button" onclick="apply()">Apply</button>
+
+            <div id="m"><canvas id="superChart"></canvas></div>
+        </div>
+        <script>
+            //  GLOBAL DEFAULTS
+            Chart.defaults.global.responsive = true;
+            const
+                planetList   = [ 'Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Vesta', 'Ceres', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto' ],
+                keyList      = [ 'Average-Orbital-Distance', 'Diameter', 'Mass', 'Surface-Temperature', 'Orbital-Days', 'Orbital-Years', 'Period-of-Rotation-Hours', 'Period-of-Rotation-Days', 'Axial', 'Inclination' ];
+
+                const data = {
+                    'Sun': {
+                        'Average-Orbital-Distance': 0,
+                        'Diameter': 1391.4,
+                        'Mass': 1.99e+30,
+                        'Surface-Temperature': 5800,
+                        'Orbital-Days': null,
+                        'Orbital-Years': null,
+                        'Period-of-Rotation-Hours': 24.47,
+                        'Period-of-Rotation-Days': 587.28,
+                        'Axial': null,
+                        'Inclination': null
+                    },
+                    'Mercury': {
+                        'Average-Orbital-Distance': 579,
+                        'Diameter': 4.88,
+                        'Mass': 3.285e+23,
+                        'Surface-Temperature': 452,
+                        'Orbital-Days': 88,
+                        'Orbital-Years': 0.24,
+                        'Period-of-Rotation-Hours': 58.65,
+                        'Period-of-Rotation-Days': 1407.6,
+                        'Axial': 0.034,
+                        'Inclination': 7
+                    },
+                    'Venus': {
+                        'Average-Orbital-Distance': 1082,
+                        'Diameter': 12.104,
+                        'Mass': 4.87e+24,
+                        'Surface-Temperature': 737,
+                        'Orbital-Days': 224.7,
+                        'Orbital-Years': 0.6,
+                        'Period-of-Rotation-Hours': 116,
+                        'Period-of-Rotation-Days': 2784,
+                        'Axial': 177.3,
+                        'Inclination': 3.39
+                    },
+                    'Earth': {
+                        'Average-Orbital-Distance': 1496,
+                        'Diameter': 12.756,
+                        'Mass': 5.97e+24,
+                        'Surface-Temperature': 287,
+                        'Orbital-Days': 365,
+                        'Orbital-Years': 1,
+                        'Period-of-Rotation-Hours': 1,
+                        'Period-of-Rotation-Days': 24,
+                        'Axial': 23.5,
+                        'Inclination': 0
+                    },
+                    'Mars': {
+                        'Average-Orbital-Distance': 2279,
+                        'Diameter': 6.794,
+                        'Mass': 6.42e+23,
+                        'Surface-Temperature': 218.15,
+                        'Orbital-Days': 687,
+                        'Orbital-Years': 1.88,
+                        'Period-of-Rotation-Hours': 1.026,
+                        'Period-of-Rotation-Days': 24.6,
+                        'Axial': 25,
+                        'Inclination': 1.85
+                    },
+                    'Vesta': {
+                        'Average-Orbital-Distance': 3533.6,
+                        'Diameter': 0.5254,
+                        'Mass': 259000000000000000000,
+                        'Surface-Temperature': 142.7,
+                        'Orbital-Days': 1325,
+                        'Orbital-Years': 3.63,
+                        'Period-of-Rotation-Hours': 1325,
+                        'Period-of-Rotation-Days': 31800,
+                        'Axial': 29,
+                        'Inclination': 7.14
+                    },
+                    'Ceres': {
+                        'Average-Orbital-Distance': 4140.2,
+                        'Diameter': 0.9392,
+                        'Mass': 896000000000000000000,
+                        'Surface-Temperature': 130,
+                        'Orbital-Days': 1680.1,
+                        'Orbital-Years': 4.6,
+                        'Period-of-Rotation-Hours': 1680,
+                        'Period-of-Rotation-Days': 40320,
+                        'Axial': 4,
+                        'Inclination': 10.6
+                    },
+                    'Jupiter': {
+                        'Average-Orbital-Distance': 7783,
+                        'Diameter': 142.984,
+                        'Mass': 1.9e+27,
+                        'Surface-Temperature': 125.4,
+                        'Orbital-Days': 4328,
+                        'Orbital-Years': 11.86,
+                        'Period-of-Rotation-Hours': 0.4125,
+                        'Period-of-Rotation-Days': 9.9,
+                        'Axial': 3,
+                        'Inclination': 1.304
+                    },
+                    'Saturn': {
+                        'Average-Orbital-Distance': 14290,
+                        'Diameter': 120.536,
+                        'Mass': 5.68e+26,
+                        'Surface-Temperature': 93.15,
+                        'Orbital-Days': 10759,
+                        'Orbital-Years': 29.4,
+                        'Period-of-Rotation-Hours': 0.43958,
+                        'Period-of-Rotation-Days': 10.5,
+                        'Axial': 26.7,
+                        'Inclination': 2.485
+                    },
+                    'Uranus': {
+                        'Average-Orbital-Distance': 28710,
+                        'Diameter': 51.118,
+                        'Mass': 8.68e+25,
+                        'Surface-Temperature': 49.15,
+                        'Orbital-Days': 29904,
+                        'Orbital-Years': 84,
+                        'Period-of-Rotation-Hours': 0.7181,
+                        'Period-of-Rotation-Days': 17.2,
+                        'Axial': 97.77,
+                        'Inclination': 0.773
+                    },
+                    'Neptune': {
+                        'Average-Orbital-Distance': 44980,
+                        'Diameter': 49.528,
+                        'Mass': 1.02e+26,
+                        'Surface-Temperature': 55,
+                        'Orbital-Days': 60190,
+                        'Orbital-Years': 164.8,
+                        'Period-of-Rotation-Hours': 0.683,
+                        'Period-of-Rotation-Days': 16.4,
+                        'Axial': 28.32,
+                        'Inclination': 1.767
+                    },
+                    'Pluto': {
+                        'Average-Orbital-Distance': 59150,
+                        'Diameter': 2.368,
+                        'Mass': 1.31e+22,
+                        'Surface-Temperature': 55,
+                        'Orbital-Days': 90520,
+                        'Orbital-Years': 248,
+                        'Period-of-Rotation-Hours': 6.39,
+                        'Period-of-Rotation-Days': 153.36,
+                        'Axial': 112.5,
+                        'Inclination': 17.14
+                    }
+                }
+
+            const
+                o = document.getElementById( 'o' ),
+                c = document.getElementById( 'c' );
+
+            for ( let i = 0; i < planetList.length; i++ ) {
+                let opt = document.createElement( 'option' );
+                opt.text = planetList[ i ];
+                o.options.add( opt, i );
+            }
+
+            for ( let i = 0; i < planetList.length; i++ ) {
+                let opt = document.createElement( 'option' );
+                opt.text = planetList[ i ];
+                c.options.add( opt, i );
+            }
+
+            let ctx = document.getElementById( 'superChart' );
+            var x = new Chart( ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: keyList,
+                        datasets: [
+                            {
+                                label: 'E1',
+                                data: [],
+                                pointBorderColor: 'rgba( 52, 152, 219, 1.0)',
+                                pointBackgroundColor: 'rgba(52, 152, 219,1.0)',
+                                backgroundColor: 'rgba( 52, 152, 219, 0.6 )'
+                            }, {
+                                label: 'E2',
+                                data: [],
+                                pointBorderColor: 'rgba( 231, 76, 60, 1.0 )',
+                                pointBackgroundColor: 'rgba( 231, 76, 60, 1.0 )',
+                                backgroundColor: 'rgba( 231, 76, 60, 0.6 )'
+                            }
+                        ]
+                    }
+            } );
+            console.log( x.data );
+            function apply() {
+                let e1 = document.getElementById( 'o' ),
+                    e2 = document.getElementById( 'c' );
+
+                if ( e1.selectedIndex === -1 )
+                    return null;
+
+                x.data.datasets[ 0 ].data = data[ e1.options[ e1.selectedIndex ].text ];
+                x.data.datasets[ 1 ].data = data[ e1.options[ e1.selectedIndex ].text ];
+                x.update();
+            }
+
+        </script>
+    </body>
+</html>
