@@ -1,6 +1,6 @@
 # Scientists
 - ### Galileo Galilei *(1564 - 1642)*
-	- Used a slope to mesure speed of free fall
+	- Used a slope to measure speed of free fall
 - ### Isaac Newton *(1642 - 1727)*
 	- *One Universe*
 	- Laws of motion and gravity, calculus, light, etc.
@@ -39,7 +39,7 @@
 	- Every law of nature is subject to change based on observations
 
 - ### Scientific Theory
-	- A theory is a synthesis of large body of information that encompasses well tested laws and hypothesies
+	- A theory is a synthesis of large body of information that encompasses well tested laws and hypothesis
 
 - ### Hypothesis?
 	- A *hypothesis* is an *educated guess* about why something happens
@@ -49,10 +49,10 @@
 
 - ### Interesting
 	- 30% - 50% of all scientific discoveries are accidental
-	- Louis Pasteur created penicilen on accident by leaving a petridish out - mold grew and killed the bacteria
+	- Louis Pasteur created penicillin on accident by leaving a petri dish out - mold grew and killed the bacteria
 	- Astronomy - Study of space and physical evidence
-	- Astrology - Study of zodics and astrological influences
-	- Why is Galileo refered to as "Galileo"? Newton isn't refered to as "Isaac," "Kepler," etc.
+	- Astrology - Study of zodiacs and astrological influences
+	- Why is Galileo referred to as "Galileo"? Newton isn't referred to as "Isaac," "Kepler," etc.
 
 ------
 
@@ -94,7 +94,7 @@
 		- Orbit sweeps same area in equal time
 	- **$3^{rd}$ Law**
 		- $\ p^2 = a^3 $
-		- The orbital period (in years) squared is proportiant (~) to the distance in AU's cubed
+		- The orbital period (in years) squared is proportionate (~) to the distance in AU's cubed
 
 - ### Acceleration of Gravity
 	- All falling objects accelerate at the same rate (not counting friction of air resistance
@@ -170,9 +170,9 @@
 	- How to find the mass of a planet
 
 - ### Tangential speed
-	- If object is shot at 8 km/s - it will become a satelitte
+	- If object is shot at 8 km/s - it will become a satellite
 	- Earth escape velocity: $ v_{escape} = 11.2 \frac{km}{s} $
-	- Chaging an orbit
+	- Changing an orbit
 		- friction or atmospheric drag
 		- gravitational encounter
 
@@ -185,7 +185,7 @@
 		- The sun is a factor as well
 		- During a new moon, the tides are larger because moon and sun pulls
 		- During a full moon, the tides are just as large because the moon and sun pull in both directions (takes away from middle)
-		- **neap** - when the moon and sun are not alligned to create large tides
+		- **neap** - when the moon and sun are not aligned to create large tides
 	- Synchronous rotation - the moon and the sun rotate at the same amount
 	- **Tidal heating** - Tidal forces are important source of heat on many moons
 	- **Roche limit** - this occurs when the tidal forces exceed the internal gravity of an object
@@ -193,14 +193,14 @@
 	- **Cryovolcanism* - Water shoots out from the crust due to gravity orbit
 
 - ### Light and Matter
-	- Hicks bozum
+	- Hicks Bozum
 	- 6 corks
-		- Atom's proton and nutrons
+		- Atom's proton and neutrons
 	- 6 limptons
 		- Atom's electrons
 	- 4 forces of nature
 		- Gravity (infinitely extends throughout universe)
-		- Electromagnitism (infinitely extends throughout universe)
+		- Electromagnetism (infinitely extends throughout universe)
 		- Strong nuclear force (extends about 15 m maximum)
 		- Weak nuclear force (extends about 15 m maximum)
 	- Protons
@@ -208,7 +208,7 @@
 	- Electron Cloud
 		- About $10^{-10} meters$
 	- Element
-		- Is defined by *how many elements sit inside the nucleaus*
+		- Is defined by *how many elements sit inside the nucleus*
 	- Molecules
 		- Consist of two or more atoms
 	- Isotope
@@ -223,7 +223,7 @@
 		- **Plasma** (ionized vapor)
 	- Phase Changes
 		- **Melting** - breaking of rigid chemical bonds
-		- **Evaporationg** - breaking of flexible chemical bonds
+		- **Evaporation** - breaking of flexible chemical bonds
 		- **Dissociation** - Breaking of molecules into atoms
 		- **Ionization** - Stripping of elections changing the atom
 
@@ -240,28 +240,28 @@
 		- Opaque objects absorb light
 	- Reflect/Scatter light
 		- Mirror (smooth surface) - reflects back at equal angle
-		- Water (rough surface) - reflects back at different angles wehn choppy
+		- Water (rough surface) - reflects back at different angles when choppy
 	- Blue jeans reflect blue light and absorbs the other colors
 	- Light can act either like a wave or like a particle
 	- Light wave is a vibration of electric and magnetic fields
 	- #### Particles of Light
 		- Each photon has a wavelength and frequency
-		- The energy of a photon depends on its frequecy:
+		- The energy of a photon depends on its frequency:
 		- $E = h • f$
 		- $h = 6.626 • 10^{-34} Joule•s$ is the Planck constant
 
 - ### Waves
-	- Wavelength - mesurement from crest to crest
+	- Wavelength - measurement from crest to crest
 	- Frequency - number of crest that pass through per second
 	- Light - $c$
 	- $c ≈ 3 • 10^8 \frac{m}{s}$
 	- #### Frequency
-		- Mesured in hertz
+		- Measured in hertz
 		- $\lambda • f = c$
 	- **Order**
 		- Gamma rays - x-rays - ultraviolet - visible - infrared - radio
 	- We only see a tiny sliver of the electromagnetic spectrum: about $400\ nm$ to $750\ nm$
-	- The basics of spectrum be broken into three types: emission line spectrum, countinuous spectrum, absorption spectrum
+	- The basics of spectrum be broken into three types: emission line spectrum, continuous spectrum, absorption spectrum
 	- An object's thermal radiation spectrum depends only on temperature
 
 - ### Termal Radiation
@@ -294,7 +294,7 @@
 		- KECK - 10 m diameter (Hawaii Telescope)
 	- Angular resolution
 		- Human eye = 1 arc minute
-		- If two sources of light are more than one arcminute away they appear to be one source of light (like a car)
+		- If two sources of light are more than one arc-minute away they appear to be one source of light (like a car)
 		- Limit on Angular resolution is called *defraction limit*
 	- Refracting Telescope
 		- First made by Galileo
@@ -350,14 +350,30 @@
 		- Tectonics - transfers heat from the core to the Lithosphere
 	- No plate tectonics on Venus
 	- Earth is the only terrestrial planet in our solar system that has tectonic plates
-	- 
 
-
-
-
-
-
-
+# Missions to other worlds
+- Cassini
+    - Exploring Saturn since 2004
+    - Enceladus
+        - "Found clear evidence of present-day hydrothermal activity on Enceladus" ([NASA | Cassini Mission][0])
+        - Hot water temperatures underneath ice shell
+    - Titan
+        - With mountains, rivers, oceans, etc. - suggests high geological activity
+        - First touch down on Titan in 2005
+        - Huygens probe is the first human craft to touch down in the outer solar system
+        - Could contain habitable environments but the water/ammonia ocean is 35 - 50 miles below the moons surface
+    - Advanced Composition Explorer (ACE)
+        - Acts as a "weather station" for solar and space activity
+        - Measures solar-wind ions, cosmic rays, space wind, etc.
+        - Operating since 1997
+    - Solar and Heliospheric Observatory (SOHO)
+        - Discovered 3000 comets that disintegrate near the sun
+        - Pulled in my gravity and destroyed
+        - 95% of the discovered comets were by "citizen astronomers" - Enthusiast website watchers that report their findings
+    - Voyager 2
+        - First man made craft to ever flyby Neptune
+        - Triton "was found to be the coldest known planetary body in the solar system" ([NASA | Voyager 2 Mission - Neptune Accomplishments][1])
+        - Another moon with ice "volcano" or "cryovolcanism"
 
 
 
@@ -367,3 +383,12 @@
 	- And *no* earthquakes?
 - Is the astroid field to the sun as the saturn rings are to saturn?
 - No plate tectonics on Venus
+
+
+
+
+
+
+
+[0]: http://solarsystem.nasa.gov/missions/cassini
+[1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
