@@ -331,6 +331,7 @@
 	- Lithosphere
 		- Planet's outer layer of cool rigid rock
 		- "Floats" on the rocky crust
+
 - Geological Activity
 	- Accretion and Differentiation when planets were young
 	- Radioactivity
@@ -350,6 +351,84 @@
 		- Tectonics - transfers heat from the core to the Lithosphere
 	- No plate tectonics on Venus
 	- Earth is the only terrestrial planet in our solar system that has tectonic plates
+
+- Tectonics
+    - Plate Motions
+        - Measurements of plate motions tell us past and future layout of the continents
+    - Two types of crust
+        - **Seafloor crust** is (5-10km) and denser continental crust
+        - **Continental crust** is thicker (20-70km)
+    - Seafloor recycled - called subduction
+    - Types of movement
+        - Convergent
+        - Transform
+        - Divergent
+    - Type of Erosion
+        - Rivers
+        - Glacial
+        - Wind
+    - Global Magnetic Field
+        - Compasses point *north* because the north magnetic pole is in the *south* - opposites repel
+        - Sources of magnetic fields must have **Molten interior**, **convection**, **moderately rapid rotation**
+    - Earth-sun connection
+        - Solar wind hits magnetic field of the earth
+        - Affects spacecraft, power lines, pipelines, navigation and communication systems, satellites, etc.
+    - Auroral Oval
+        - 100-250km above surface
+        - Below 100km - Nitrogen pink/crimson
+        - 100km - 200km - Nitrogen green and blue
+        - Above 200km - Nitrogen red
+- Atmosphere
+    - Layer of gas that surrounds a world
+    - Pressure at sea level is 1kg per $cm^2$ ($\frac{10N}{cm^2}$)
+    - Absorb and scatter light
+    - Create wind, weather, climate
+    - Interacts with solar wind to create a magnetosphere
+    - Makes planetary surfaces warmer through the greenhouse effect
+
+Atmosphere
+----------
+| Mercury | Venus | Earth | Moon | Mars |
+|---------|-------|-------|------|------|
+| Helium, Sodium, Oxygen | 96% $CO_2$, 3.5% $N_2$ | 77% $N_2$, 21% $O_2$, 1% Argon | Helium, Sodium, Argon | 95% $CO_2$, 2.7% $N_2$, 1.6% Argon |
+| $10^{-14}$ Bar | 90 Bar | 1 Bar | $10^{-14}$ Bar | 0.007 Bar |
+| -175ºC - 425ºC | 470ºC | 15ºC | -175ºC - 125ºC | -50ºC |
+
+- Planetary temperatures
+    - Planet's surface temperature varies based on speed of rotation and distance to the sun
+    - Planet's reflectivity (albedo) - the amount of absorbed/reflected light
+    - Planets with low albedo absorb more sunlight, leading to hotter temperatures
+
+Albedo
+------
+| Mercury | Venus | Earth | Moon | Mars |
+|---------|-------|-------|------|------|
+|  11%    |  65%  | 30-35%| 12%  | 15%  |
+
+- Greenhouse Effect
+    - Visible light passes through the atmosphere and warms a planet's surface
+    - If you took away greenhouse effect - the earth would be -16ºC
+
+| Mercury | Venus | Earth | Moon | Mars |
+|---------|-------|-------|------|------|
+|   null  | 510ºC |  31ºC | null | 6ºC  |
+
+- Light effects on Atmosphere
+    - Troposphere (ground level)
+    - Stratosphere
+    - Mesosphere
+    - Thermosphere (100km +)
+    - Exosphere - highest layer - atmosphere fades into space
+- Why is the sky blue?
+    - Atmosphere scatters blue light from the Sun, making it appear to come from different directions
+
+- 
+
+
+
+
+-------------------------------
+# Portfolio
 
 # Missions to other worlds
 - Cassini
@@ -385,10 +464,12 @@
 - No plate tectonics on Venus
 
 
-
+# Include pictures of milky way taken in Aussie
+# Include pictures taken of Northern lights
 
 
 
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
 [1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
+
