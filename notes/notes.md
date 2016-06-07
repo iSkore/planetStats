@@ -459,25 +459,27 @@
 - Jupiter
     - Largest mass
     - Mostly helium, hydrogen, oxygen, etc.
-- Saturn
-    - Large rings
-- Uranus
-    - 14 times Earth's mass
-- Neptune
-    - 17 times Earth's mass
-- Jupiter and Saturn
     - Interiors of planets
         - Little is known about how matter exsists and reacts inside a "gas giant"
         - Metallic hydrogen core (we know very little about how this works/exsists)
         - 1 bar surface - gas hydrogen
         - 500,000 bar - liquid hydrogen
         - 2,000,000 bar - metallic hydrogen (78% of the radius and 10,000ºK)
-        - 100,000,000 bar - Core (unknown - 36,000ºK)
-    - Galileo and Cassini satelittes
+        - 100,000,000 bar - Core (unknown - ~36,000ºK)
+    - Galileo satelitte
+- Saturn
+    - Large rings
+    - Much less massive than Jupiter
+    - 12,000ºK Core
+- Uranus
+    - 14 times Earth's mass
+- Neptune
+    - 17 times Earth's mass
+
 - Uranus and Neptune
     - No solid surface
     - Voyager 2 passby in the late 1980's
-    -
+
 
 
 
