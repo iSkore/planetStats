@@ -314,7 +314,7 @@
 	- Where to have a telescope
 		- Calm wind, high altitude, dark area, dry conditions
 
-# Planetary geology
+# Planetary Geology - Terestrial Planet System
 - Terrestrial planets
 	- Earth's density - $5.5\frac{g}{cm^3}$
 	- As low as $3\frac{g}{cm^3}$
@@ -386,32 +386,32 @@
     - Interacts with solar wind to create a magnetosphere
     - Makes planetary surfaces warmer through the greenhouse effect
 
-Atmosphere
-----------
-| Mercury | Venus | Earth | Moon | Mars |
-|---------|-------|-------|------|------|
-| Helium, Sodium, Oxygen | 96% $CO_2$, 3.5% $N_2$ | 77% $N_2$, 21% $O_2$, 1% Argon | Helium, Sodium, Argon | 95% $CO_2$, 2.7% $N_2$, 1.6% Argon |
-| $10^{-14}$ Bar | 90 Bar | 1 Bar | $10^{-14}$ Bar | 0.007 Bar |
-| -175ºC - 425ºC | 470ºC | 15ºC | -175ºC - 125ºC | -50ºC |
+>Atmosphere
+>----------
+>| Mercury | Venus | Earth | Moon | Mars |
+>|---------|-------|-------|------|------|
+>| Helium, Sodium, Oxygen | 96% $CO_2$, 3.5% $N_2$ | 77% $N_2$, 21% $O_2$, 1% Argon | Helium, Sodium, Argon | 95% $CO_2$, >2.7% $N_2$, 1.6% Argon |
+>| $10^{-14}$ Bar | 90 Bar | 1 Bar | $10^{-14}$ Bar | 0.007 Bar |
+>| -175ºC - 425ºC | 470ºC | 15ºC | -175ºC - 125ºC | -50ºC |
 
 - Planetary temperatures
     - Planet's surface temperature varies based on speed of rotation and distance to the sun
     - Planet's reflectivity (albedo) - the amount of absorbed/reflected light
     - Planets with low albedo absorb more sunlight, leading to hotter temperatures
 
-Albedo
-------
-| Mercury | Venus | Earth | Moon | Mars |
-|---------|-------|-------|------|------|
-|  11%    |  65%  | 30-35%| 12%  | 15%  |
+>Albedo
+>------
+>| Mercury | Venus | Earth | Moon | Mars |
+>|---------|-------|-------|------|------|
+>|  11%    |  65%  | 30-35%| 12%  | 15%  |
 
 - Greenhouse Effect
     - Visible light passes through the atmosphere and warms a planet's surface
     - If you took away greenhouse effect - the earth would be -16ºC
 
-| Mercury | Venus | Earth | Moon | Mars |
-|---------|-------|-------|------|------|
-|   null  | 510ºC |  31ºC | null | 6ºC  |
+>| Mercury | Venus | Earth | Moon | Mars |
+>|---------|-------|-------|------|------|
+>|   null  | 510ºC |  31ºC | null | 6ºC  |
 
 - Light effects on Atmosphere
     - Troposphere (ground level)
@@ -422,8 +422,62 @@ Albedo
 - Why is the sky blue?
     - Atmosphere scatters blue light from the Sun, making it appear to come from different directions
 
-- 
 
+### History of Earth's Atmosphere
+- 1: Creation of earth
+- 2: *4.4 Billion years ago*
+    - outgassing - $H_2O$, $CO_2$, $N_2$
+    - Fundamental features of the *Carbon Cycle*
+- 3: *2.4 Billion years ago*
+    - $O_2$ started appearing
+    - First living organisms called *cyanobacteria* formed
+        - Required $CO_2$ - $O_2$ was toxic
+- Why does Earth's climate stay stable?
+    - $CO_2$ Cycle
+    - Atmospheric $CO_2$
+    - Rain erodes minerals that flow into the ocean
+    - Minerals combine with carbon to make rocks on ocean floor
+    - Subduction carries carbonate rock down into mantle
+    - Rock melts in mantle and $CO_2$ is outgassed  back into atmosphere through volcanoes
+- Ozone and the Stratosphere
+    - Ultraviolet light can break up $O_2$ molecules, allowing ozone $O_3$ to form
+    - Human made chlorofluorocarbons in the atmosphere destroy ozone, reducing protection from UV light
+    - $CO_2$ Concentration
+- Thermohaline Circulation
+
+### Atmosphere of Venus
+- Reflective sulphuric acid clouds
+- High pressure
+
+### Atmosphere of Mars
+- Water-ice clouds
+- Winds as fast as $400\frac{km}{h}$
+- Polar caps
+- Dust storms cover planet
+
+# Planetary Geology - Jovian Planet Systems
+- Jupiter
+    - Largest mass
+    - Mostly helium, hydrogen, oxygen, etc.
+- Saturn
+    - Large rings
+- Uranus
+    - 14 times Earth's mass
+- Neptune
+    - 17 times Earth's mass
+- Jupiter and Saturn
+    - Interiors of planets
+        - Little is known about how matter exsists and reacts inside a "gas giant"
+        - Metallic hydrogen core (we know very little about how this works/exsists)
+        - 1 bar surface - gas hydrogen
+        - 500,000 bar - liquid hydrogen
+        - 2,000,000 bar - metallic hydrogen (78% of the radius and 10,000ºK)
+        - 100,000,000 bar - Core (unknown - 36,000ºK)
+    - Galileo and Cassini satelittes
+- Uranus and Neptune
+    - No solid surface
+    - Voyager 2 passby in the late 1980's
+    -
 
 
 
@@ -472,4 +526,3 @@ Albedo
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
 [1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
-
