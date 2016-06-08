@@ -467,19 +467,126 @@
         - 2,000,000 bar - metallic hydrogen (78% of the radius and 10,000ºK)
         - 100,000,000 bar - Core (unknown - ~36,000ºK)
     - Galileo satelitte
+    - Ammonia - ammonium hydrosulfide - water
+    - No seasons - ~3% axis tilt
+    - Rapid rotation keeps planet in a constant state of storm
+    - Convection and coriolis effect caused the layers/rings along its latatude
+    - Snows ammonia in troposphere
+    - Storm spot - gigantic storm twice the size of Earth with counterclockwise circulation
+        - Opposite of a hurricane, winds are flowing outwards due to high pressure (hurricanes flow inwards because low pressure center)
+        - Might be a permanent stable feature
+        - Clouds are 8km above other surrounding clouds
+        - Winds ~270mph at surface but are stagnant underneath
+        - Rotating metallic hydrogen creats magnetic field
+            - Has bright blue aurora
+            - Has high effect on surrounding moons and creates magnetosphere
+            - Io's volcanic surface blasts particles into magnetosphere
+        - Axis of rotation very close to magnetic pole
 - Saturn
     - Large rings
     - Much less massive than Jupiter
     - 12,000ºK Core
+    - Cloud layers similar to Jupiter's but buried because of cooler temperatures
+    - Mathane - ammonia - ammonium hydrosulfide - water
+    - Very little seasonal change - emits so much energy
+    - $1100_{mph} \ or \ 550\frac{m}{s}$ winds (unknown reason)
+    - "Storm Alley" in saturn's southern latitudes
+    - Lightning 1000 times more powerful than anything on Earth
+    - Only hot polar vortex in the solar system
+    - North and south poles emit heat - unlike most that emit cold radiation
+    - Hexagon shaped southern pole (unknown reason)
+    - Most planets have polar vortex but not in a hexagon shape
 - Uranus
     - 14 times Earth's mass
+    - No solid surface
+    - Density of $1.3\frac{g}{cm^3}$ indicates that it is made primarily of various ices ($H_2O$, ammonia, methane)
+    - 9.3 to 13.5 times earth masses
+    - Voyager 2 passby in the late 1980's
+    - Ice mantle is not composed of ice - actually hot and dense fluid consisting of water ammonia ocean
+    - Gaseous atmosphere gradually transitions into the internal liquid layers
+    - Above certain temperatures, gases turn to liquids
+    - Vertually emits no excess heat (unknown reason)
+    - Mathane - ammonia
+    - Hot thermosphere that extends thousands of miles above surface (unknown reason)
+    - 60º magnetic field tilt to the axis of rotation (might be from massive impact that knocked it on its side, unknown)
 - Neptune
     - 17 times Earth's mass
-
-- Uranus and Neptune
-    - No solid surface
     - Voyager 2 passby in the late 1980's
+    - Atmosphere forms about 5%-10% of the planet
+    - Mantle is ~2,000ºK - 5,000ºK
+    - At the depth of 7000km, the conditions may be such that mathan decomposes into diamond crystals that rain towards the core like hailstones
+    - Liquid diamond ocean with diamond-bergs floating around
+    - Emits 2.6 times more energy than it receives (unknown reason)
+    - Methane - ammonia
+    - Tilt close to earth's but no seasonal changes due to massive internal heat
+    - 46º magnetic field tilt to the axis of rotation (entirely unknown reason)
 
+# Moons
+- 200 moons in the Jovian Planet system, 3 in the terrestrial system (2 Mars, 1 Earth)
+- Small moons (below 300 km)
+    - No geological activity
+- Medium-sized moons (300-1500 km)
+    - Past (some ongoing) geological activity
+- Large moons (1500 km)
+    - Ongoing geological activity
+- Mid-sized and Large moons
+    - Enough self-gravity to be spherical
+    - Lots of ice
+    - circular orbits and are large enough to create tides
+    - Jupiter: Io, Europa, Ganymede, Callisto
+    - Saturn: Titan, Lapetus, Rhea, Dione, Tethys, Enceladus, Mimas
+    - Uranus: Oberon, Titania, Umbriel, Ariel, Miranda
+    - Neptune: Triton, Nereid
+- Small moons
+    - Potato-shaped
+    - Probably captured asteroids or comets
+    - Little to no geological activity (exception cratering)
+    - Very low density
+    - Calypso, Pandora, Telesto, Hyperion, Phoebe, Janus
+- Io
+    - Io's surface is so young that not a single impact crater survived
+    - Might be the core of old planet/moon
+    - Basalt lava
+    - Over 400 active volcanos
+    - Outgassing plumes shoots material 330 km above surface
+    - Material creates Io torus
+    - Inner iron or iron sulfide core (20% of mass)
+    - 12-40km thick lithosphere
+    - How does Io get heated by Jupiter? *Tidal Resonance*
+    - Tidal Resonance creates heat by squishing and streching the planet as it orbits
+    - Io gets 200 times more heat from tidal forces than Earth gets from radioactivity
+    - Elliptical orbit flexs Io's shape
+    - 4 Io orbits = 2 Europa orbits = 1 Ganymede orbits
+    - This keeps orbit of Io elliptical
+    - Orbital Resonance
+- Europa
+    - Smoothest body in the solar system
+    - No verticle features (mountains, creators, trenches, etc.)
+    - Covered in water ice
+    - Massive water ocean under ice crust - believe this because all ice cracks are filled in quickly
+    - Lineae are the dominant surface feature - cracks in the ice
+    - Tital flexing keeps subsurface ocean liquid (not ice)
+    - Surface about 50ºK - 110ºK
+    - Ice *might* be 200m - 10km thick (unknown)
+    - Metallic core
+    - Rocky mantle
+    - Believe ocean of water is 100km deep
+- Ganymede
+    - Largest moon in the solar system
+    - Dark regions: very old, highly cratered, $\frac{1}{3}$ the surface
+    - Light regions: younger (but still ancient). Indications of water or ice
+    - Least effected by orbital resonance
+    - Confirmed interior ocean
+    - Might have asyncronous orbital rotation inside
+- Callisto
+    - Heavily cratered indicating an old surface that might hide a deeply buried ocean
+    - Interior is mostly mixed up of metal and rock
+    - If there was an ocean it would be very salty, 50-200km deep, and may be highly conductive fluid
+    - Indications of global magnetic field
+- Other Jupiter moons
+    - Small inner moons - at least 4 small within Jupiter's rings
+    - Irregular group 1: 7 probable captures in inclined orbits
+    - Irregular group 2: 48 probable captures
 
 
 
