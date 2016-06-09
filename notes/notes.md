@@ -543,7 +543,9 @@
     - Little to no geological activity (exception cratering)
     - Very low density
     - Calypso, Pandora, Telesto, Hyperion, Phoebe, Janus
-- Io
+
+### Jupiter's moons
+- **Io**
     - Io's surface is so young that not a single impact crater survived
     - Might be the core of old planet/moon
     - Basalt lava
@@ -559,7 +561,7 @@
     - 4 Io orbits = 2 Europa orbits = 1 Ganymede orbits
     - This keeps orbit of Io elliptical
     - Orbital Resonance
-- Europa
+- **Europa**
     - Smoothest body in the solar system
     - No verticle features (mountains, creators, trenches, etc.)
     - Covered in water ice
@@ -571,23 +573,77 @@
     - Metallic core
     - Rocky mantle
     - Believe ocean of water is 100km deep
-- Ganymede
+- **Ganymede**
     - Largest moon in the solar system
     - Dark regions: very old, highly cratered, $\frac{1}{3}$ the surface
     - Light regions: younger (but still ancient). Indications of water or ice
     - Least effected by orbital resonance
     - Confirmed interior ocean
     - Might have asyncronous orbital rotation inside
-- Callisto
+- **Callisto**
     - Heavily cratered indicating an old surface that might hide a deeply buried ocean
     - Interior is mostly mixed up of metal and rock
     - If there was an ocean it would be very salty, 50-200km deep, and may be highly conductive fluid
     - Indications of global magnetic field
-- Other Jupiter moons
+- **Other Jupiter moons**
     - Small inner moons - at least 4 small within Jupiter's rings
     - Irregular group 1: 7 probable captures in inclined orbits
     - Irregular group 2: 48 probable captures
 
+### Saturn's moons
+- Mimas, Enceladus, Tethys, Dione, Rhea, Titan, Lapetus, Hyperion
+- **Titan**
+    - Atmosphere of Methane
+    - Probe detected "squishy" surface
+    - Ersoion by liquid and wind
+    - Ice-six (tetragonal crystals - not familiar with this formation of ice)
+- **Iapetus**
+    - "the painted moon"
+    - Black and white material coats moon from carbon
+    - Much farther orbital distance than other moons
+    - Highest inclination
+- **Enceladus**
+    - 500 km across
+    - Spews "brime" water like soda
+    - Cassini sampled water from spew
+
+### Uranus's moons
+- Miranda, Ariel, Umbriel, Titania, Oberon
+- **Ariel**
+    - Shows evidence of tectonics
+- **Oberon**
+    - Very similar in size and features as Ariel but no tectonics
+
+### Neptune's moons
+- 7 small *moonlets*
+- **Proteus**
+    - medium sized ice ball
+    - Irregular shape
+- **Triton**
+    - orbits backwards
+    - Coldest world in the solar system (38ºK)
+    - Reflects more light than pluto
+    - High inclination
+    - Likely caught from the Oort cloud
+    - Frozen ice, rock metal, hydrogen
+    - Could have life in internal ocean deep under crust
+- **Nereid**
+    - Ice ball (little known)
+    - Irregular shape
+
+### Saturn's rings
+- Ring's objects orbit around Saturn's equator
+- Extend from 270,000 km in diameter
+- 99.9% pure water ice, 0.1% tholins or silicates
+- Main rings are primarily composed of particles ranging from 1cm to 10m
+- Dark gaps appear where there are relatively few particles
+- Particles frequently collide but move at same velocities - collision is very gentle
+- "Shepard moons" that live within the rings
+- Rings form when Moons are broken apart at the roche limit
+
+### Other
+- Chariklo is surrounded by two dense and narrow rings
+-
 
 
 -------------------------------
@@ -625,7 +681,7 @@
 	- And *no* earthquakes?
 - Is the astroid field to the sun as the saturn rings are to saturn?
 - No plate tectonics on Venus
-
+- If ice can squish and stretch more than rock with less force - do we have tectonics because the mass of the moon, and the distance of the sun, were just enough to break the crust up? Seen with Enceladus, the ice crust gets fractured and split.
 
 # Include pictures of milky way taken in Aussie
 # Include pictures taken of Northern lights
