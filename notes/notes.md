@@ -641,9 +641,12 @@
 - "Shepard moons" that live within the rings
 - Rings form when Moons are broken apart at the roche limit
 
-### Other
+### Asteroids
 - Chariklo is surrounded by two dense and narrow rings
--
+- Ceres ~ 950km - 32% the mass of moon
+- Pallas ~ 544km
+- Vesta ~ 525km
+- Some astroids have their own moons (Ida)
 
 
 -------------------------------
