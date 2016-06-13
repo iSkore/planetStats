@@ -1,4 +1,4 @@
-# Scientists
+cientists
 - ### Galileo Galilei *(1564 - 1642)*
 	- Used a slope to measure speed of free fall
 - ### Isaac Newton *(1642 - 1727)*
@@ -10,23 +10,37 @@
 	- Earth's circumference = 5000 stadia x 50 ≈ 250,000 stadia || ~40k km
 
 ### Order:
-- Universe
-- Supercluster
-- Galaxy
-- Nebula
-- Star system
-- Star cluster
-- Planetary system
-- Star
-- Planet
-- Moon (satellites)
-- Astroid
-- Comet
+| Universe | Supercluster | Galaxy | Nebula | Star system | Star cluster |
+|----------|--------------|--------|--------|-------------|--------------|
+| ![u][00] |  ![u][01]    |![u][02]|![u][03]|   ![u][04]  |   ![u][05]   |
+
+[00]: http://iskore.github.io/planetStats/portfolio/img/lani.jpg
+[01]: http://iskore.github.io/planetStats/portfolio/img/super.jpg
+[02]: http://iskore.github.io/planetStats/portfolio/img/galaxy.jpg
+[03]: http://iskore.github.io/planetStats/portfolio/img/nebula.jpg
+[04]: http://iskore.github.io/planetStats/portfolio/img/starsys.jpg
+[05]: http://iskore.github.io/planetStats/portfolio/img/starclu.jpg
+
+| Planetary system |   Star | Planet |  Moon  | Asteroid | Comet  |
+|------------------|--------|--------|--------|----------|--------|
+|     ![u][06]     |![u][07]|![u][08]|![u][09]| ![u][10] |![u][11]|
+
+[06]: http://iskore.github.io/planetStats/portfolio/img/planetsys.jpg
+[07]: http://iskore.github.io/planetStats/portfolio/img/star.jpg
+[08]: http://iskore.github.io/planetStats/portfolio/img/planet.jpg
+[09]: http://iskore.github.io/planetStats/portfolio/img/moon.jpg
+[10]: http://iskore.github.io/planetStats/portfolio/img/asteroid.jpg
+[11]: http://iskore.github.io/planetStats/portfolio/img/comet.jpg
 
 ### Hubble
-- Hubble deep field (considered the most important image ever taken)
-- Hubble deep field south
-- Hubble ultra deep field
+
+| Hubble deep field | Hubble deep field south | Hubble ultra deep field |
+|-------------------|-------------------------|-------------------------|
+|       ![u][12]    |        ![u][13]         |         ![u][14]        |
+
+[12]: http://iskore.github.io/planetStats/portfolio/img/Hubble_Deep_Field.jpg
+[13]: http://iskore.github.io/planetStats/portfolio/img/Hubble_Deep_Field_South.jpg
+[14]: http://iskore.github.io/planetStats/portfolio/img/Hubble_Ultra_Deep_Field.jpg
 
 ### Science *Defined*
 - ### Scientific method (inductive)
@@ -190,7 +204,7 @@
 	- **Tidal heating** - Tidal forces are important source of heat on many moons
 	- **Roche limit** - this occurs when the tidal forces exceed the internal gravity of an object
 		- Created the Saturn ring
-	- **Cryovolcanism* - Water shoots out from the crust due to gravity orbit
+	- **Cryovolcanism** - Water shoots out from the crust due to gravity orbit
 
 - ### Light and Matter
 	- Hicks Bozum
@@ -314,7 +328,7 @@
 	- Where to have a telescope
 		- Calm wind, high altitude, dark area, dry conditions
 
-# Planetary Geology - Terestrial Planet System
+# Terestrial Planet System - Planetary Geology
 - Terrestrial planets
 	- Earth's density - $5.5\frac{g}{cm^3}$
 	- As low as $3\frac{g}{cm^3}$
@@ -393,6 +407,13 @@
 >| Helium, Sodium, Oxygen | 96% $CO_2$, 3.5% $N_2$ | 77% $N_2$, 21% $O_2$, 1% Argon | Helium, Sodium, Argon | 95% $CO_2$, >2.7% $N_2$, 1.6% Argon |
 >| $10^{-14}$ Bar | 90 Bar | 1 Bar | $10^{-14}$ Bar | 0.007 Bar |
 >| -175ºC - 425ºC | 470ºC | 15ºC | -175ºC - 125ºC | -50ºC |
+>| ![u][15]       |![u][16]| ![u][17] | ![u][18] | ![u][19] |
+
+[15]: http://iskore.github.io/planetStats/portfolio/img/planets/mercury.png
+[16]: http://iskore.github.io/planetStats/portfolio/img/planets/venus.png
+[17]: http://iskore.github.io/planetStats/portfolio/img/planets/earth.png
+[18]: http://iskore.github.io/planetStats/portfolio/img/planets/moon.png
+[19]: http://iskore.github.io/planetStats/portfolio/img/planets/mars.png
 
 - Planetary temperatures
     - Planet's surface temperature varies based on speed of rotation and distance to the sun
@@ -455,7 +476,7 @@
 - Polar caps
 - Dust storms cover planet
 
-# Planetary Geology - Jovian Planet Systems
+# Jovian Planet Systems
 - Jupiter
     - Largest mass
     - Mostly helium, hydrogen, oxygen, etc.
@@ -520,6 +541,17 @@
     - Methane - ammonia
     - Tilt close to earth's but no seasonal changes due to massive internal heat
     - 46º magnetic field tilt to the axis of rotation (entirely unknown reason)
+
+
+| Jupiter | Saturn | Uranus | Neptune |
+|---------|--------|--------|---------|
+| ![u][20]|![u][21]|![u][22]|![u][23] |
+
+[20]: http://iskore.github.io/planetStats/portfolio/img/planets/jupiter.png
+[21]: http://iskore.github.io/planetStats/portfolio/img/planets/saturn.png
+[22]: http://iskore.github.io/planetStats/portfolio/img/planets/uranus.png
+[23]: http://iskore.github.io/planetStats/portfolio/img/planets/neptune.png
+
 
 # Moons
 - 200 moons in the Jovian Planet system, 3 in the terrestrial system (2 Mars, 1 Earth)
@@ -648,6 +680,40 @@
 - Vesta ~ 525km
 - Some astroids have their own moons (Ida)
 
+# Auxiliary Information
+- Ceres made "Planet"
+    - 3.6 times more massive than Vesta
+    - Density: $2.08\frac{g}{cm^3}$
+    - Icy core
+- Meteorite Types
+    - **Primitive**: unchanged in composition since they first formed 4.6 B years ago
+    - **Processed**: younger - have experienced processes like volcanism or differentiation
+- Sources of meteorites
+    - 5% - 6% of all meteorites found on Earth originate from Vesta
+    - 99.8% come from asteroid belt
+- Anatomy of a Comet
+    - A *coma* is the atmosphere that comes from a comet's heated nucleus
+    - Dust tail
+    - Plasma tail
+- Oort cloud
+    - Outer most layer of our solar system
+- Any object that orbits the sun is called "Trans-Neptunian Objects"
+    - Pluto, Eris, Makemake, Haumea, Kuiper Belt
+    - Charon has radius two times larger than pluto
+- Pluto
+    - Pluto has experienced rapid climate changes
+    - Charon is half the size of Pluto but much more active
+
+
+### Five Major extinction events
+| Cretaceous-Paleogene | Triassic-Jurassic | Permian-Triassic | Late Devonian | Ordovician-Silurian |
+|----------------------|-------------------|------------------|---------------|---------------------|
+|      65.5 MYA        |     205 MYA       |     251 MYA      |     375 MYA   |       450 MYA       |
+|       75% KIA        |     70% KIA       |     96% KIA      |     70% KIA   |      ~90% KIA       |
+>MYA - Million Years Ago
+>KIA - % Life Extinction
+
+
 
 -------------------------------
 # Portfolio
@@ -694,3 +760,5 @@
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
 [1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
+
+
