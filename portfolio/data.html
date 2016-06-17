@@ -20,6 +20,26 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
 
+		<style>
+            #body {
+                position: absolute;
+                left: 2.5%;
+                width: 95%;
+                height: 100%;
+            }
+            #c1 { position: inherit; left: 0%; top: 0%; width: 50%; height: 40%; }
+            #c2 { position: inherit; left: 50%; top: 0%; width: 50%; height: 40%; }
+            #c3 { position: inherit; left: 0%; top: 40%; width: 50%; height: 40%; }
+            #c4 { position: inherit; left: 50%; top: 40%; width: 50%; height: 40%; }
+            #c5 { position: inherit; left: 0%; top: 80%; width: 50%; height: 40%; }
+            #c6 { position: inherit; left: 50%; top: 80%; width: 50%; height: 40%; }
+            #c7 { position: inherit; left: 0%; top: 120%; width: 50%; height: 40%; }
+            #c8 { position: inherit; left: 50%; top: 120%; width: 50%; height: 40%; }
+            #c9 { position: inherit; left: 0%; top: 160%; width: 50%; height: 40%; }
+            #c10 { position: inherit; left: 50%; top: 160%; width: 50%; height: 40%; }
+            #m { position: inherit; left: 0%; top: 210%; width: 100%; height: 50%; }
+        </style>
+
 		<!-- Head Libs -->
 		<script src="js/modernizr.js"></script>
 		  <style>* {-webkit-tap-highlight-color: rgba(0,0,0,0);}html {-webkit-text-size-adjust: none;}body {font-family: Arial, Helvetica, sans-serif;margin: 0;color: #333;word-wrap: break-word;}h1, h2, h3, h4, h5, h6 {line-height: 1.1;}img {max-width: 100% !important;}blockquote {margin: 0;padding: 0 15px;color: #777;border-left: 4px solid #ddd;}hr {background-color: #ddd;border: 0;height: 1px;margin: 15px 0;}code {font-family: Menlo, Consolas, 'Ubuntu Mono', Monaco, 'source-code-pro', monospace;line-height: 1.4;margin: 0;padding: 0.2em 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px;}pre > code {margin: 0;padding: 0;font-size: 100%;word-break: normal;background: transparent;border: 0;}ol {list-style-type: decimal;}ol ol, ul ol {list-style-type: lower-latin;}ol ol ol, ul ol ol, ul ul ol, ol ul ol {list-style-type: lower-roman;}table {border-spacing: 0;border-collapse: collapse;margin-top: 0;margin-bottom: 16px;}table th {font-weight: bold;}table th, table td {padding: 6px 13px;border: 1px solid #ddd;}table tr {border-top: 1px solid #ccc;}table tr:nth-child(even) {background-color: #f8f8f8;}input[type="checkbox"] {cursor: default;margin-right: 0.5em;font-size: 13px;}.task-list-item {list-style-type: none;}.task-list-item+.task-list-item {margin-top: 3px;}.task-list-item input {float: left;margin: 0.3em 1em 0.25em -1.6em;vertical-align: middle;}#tag-field {margin: 8px 2px 10px;}#tag-field .tag {display: inline-block;background: #cadff3;border-radius: 4px;padding: 1px 8px;color: black;font-size: 12px;margin-right: 10px;line-height: 1.4;}</style>
@@ -261,5 +281,229 @@
 			} );
 		</script>
 		<!--End Slider Function-->
+
+		<div id="body">
+            <div id="c1"><canvas id="distChart"></canvas></div>
+            <div id="c2"><canvas id="diamChart"></canvas></div>
+            <div id="c3"><canvas id="massChart"></canvas></div>
+            <div id="c4"><canvas id="tempChart"></canvas></div>
+            <div id="c5"><canvas id="daysChart"></canvas></div>
+            <div id="c6"><canvas id="yearsChart"></canvas></div>
+            <div id="c7"><canvas id="dayRotChart"></canvas></div>
+            <div id="c8"><canvas id="hoursRotChart"></canvas></div>
+            <div id="c9"><canvas id="axialChart"></canvas></div>
+            <div id="c10"><canvas id="inclinChart"></canvas></div>
+        </div>
+        <script>
+            //  GLOBAL DEFAULTS
+            Chart.defaults.global.responsive = true;
+            const
+                defaultColor = 'rgba( 192, 57, 43, 1.0 )',
+                planetList   = [ 'Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Vesta', 'Ceres', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto' ],
+                phBkgrdColor = [
+                                    'rgba( 255, 0, 0, 0.75 )', // Sun
+                                    'rgba( 255, 150, 150, 0.75 )', // Mercury
+                                    'rgba( 255, 150, 0, 0.75 )', // Venus
+                                    'rgba( 0, 255, 0, 0.75 )', // Earth
+                                    'rgba( 255, 0, 0, 0.75 )', // Mars
+                                    'rgba( 100, 100, 100, 0.75 )', // Vesta
+                                    'rgba( 200, 150, 20, 0.75 )', // Ceres
+                                    'rgba( 255, 220, 0, 0.75 )', // Jupiter
+                                    'rgba( 255, 255, 0, 0.75 )', // Saturn
+                                    'rgba( 0, 200, 255, 0.75 )', // Uranus
+                                    'rgba( 0, 20, 255, 0.75 )', // Neptune
+                                    'rgba( 142, 68, 173, 0.75 )' // Pluto
+                              ],
+                hoverRadii  = [ 17, 4, 7, 10, 8, 3, 3, 12, 10, 8, 7, 5 ];
+
+            let distData     = [ 0, 579, 1082, 1496, 2279, 3533.6, 4140.2, 7783, 14290, 28710, 44980, 59150 ],
+                diamData     = [ 1391.4, 4.880, 12.104, 12.756, 6.794, 0.5254, 0.9392, 142.984, 120.536, 51.118, 49.528, 2.368 ],
+                massData     = [ 1.99e+30, 3.285e+23, 4.87e+24, 5.97e+24, 6.42e+23, 2.59e+20, 8.96e+20, 1.90e+27, 5.68e+26, 8.68e+25, 1.02e+26, 1.31e+22 ],
+                tempData     = [ 5800, 452.00, 737.00, 287.00, 218.15, 142.70, 130.00, 125.40, 93.15, 49.15, 55.00, 55.00 ],
+                daysData     = [ null, 88, 224.7, 365, 687, 1325, 1680.1, 4328, 10759, 29904, 60190, 90520 ],
+                yearsData    = [ null, 0.24, 0.60, 1.0, 1.88, 3.63, 4.60, 11.86, 29.40, 84.00, 164.80, 248.00 ],
+                dayRotData   = [ 587.28, 1407.6, 2784.0, 24, 24.6, 31800, 40320, 9.9, 10.5, 17.2, 16.4, 153.36 ],
+                hoursRotData = [ 24.47, 58.65, 116, 1, 1.026, 1325, 1680, 0.4125, 0.43958, 0.7181, 0.683, 6.39 ],
+                axialData    = [ null, 0.034, 177.3, 23.5, 25, 29, 4, 3, 26.7, 97.77, 28.32, 112.5 ],
+                inclinData   = [ null, 7, 3.39, 0, 1.85, 7.14, 10.6, 1.304, 2.485, 0.773, 1.767, 17.14 ];
+
+            let cta = document.getElementById( 'distChart' );
+            let a = new Chart( cta, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Average Orbital Distance (km × 10^5)',
+                            data: distData,
+                            pointBorderColor: defaultColor, pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii, pointHoverBackgroundColor: phBkgrdColor, backgroundColor: 'rgba( 160, 80, 45, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { beginAtZero: true, callback: ( value, index, ticks ) => { return value + ' km'; } } } ] } }
+            } );
+
+            let ctb = document.getElementById( 'diamChart' );
+            let b = new Chart( ctb, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Diameter (km × 10³)',
+                            data: diamData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 250, 57, 43, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 150, beginAtZero: true, callback: ( value, index, ticks ) => { return value + ' km'; } } } ] } }
+            } );
+
+            let ctc = document.getElementById( 'massChart' );
+            let c = new Chart( ctc, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Mass (kg)',
+                            data: massData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 50, 200, 50, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 6.0e+26, callback: ( value, index, ticks ) => { return value.toPrecision( 2 ) + ' kg'; } } } ] } }
+            } );
+
+            let ctd = document.getElementById( 'tempChart' );
+            let d = new Chart( ctd, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Surface Temperature (ºk)',
+                            data: tempData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: defaultColor
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 800, beginAtZero: true, callback: ( value, index, ticks ) => { return value + 'ºk'; } } } ] } }
+            } );
+
+            let cte = document.getElementById( 'daysChart' );
+            let e = new Chart( cte, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Orbital Days (days)',
+                            data: daysData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 0, 20, 255, 0.75 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { min: 0, max: 60000, callback: ( value, index, ticks ) => { return value + ' d'; } } } ] } }
+            } );
+
+            let ctf = document.getElementById( 'yearsChart' );
+            let f = new Chart( ctf, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Orbital Years (years)',
+                            data: yearsData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 80, 200, 250, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 250, callback: ( value, index, ticks ) => { return value + ' y'; } } } ] } }
+            } );
+
+            let ctg = document.getElementById( 'dayRotChart' );
+            let g = new Chart( ctg, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Period of Rotation (hours)',
+                            data: dayRotData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 205, 105, 0, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 40500, callback: ( value, index, ticks ) => { return value + ' h'; } } } ] } }
+            } );
+
+            let cth = document.getElementById( 'hoursRotChart' );
+            let h = new Chart( cth, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Period of Rotation (days)',
+                            data: hoursRotData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 255, 165, 0, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 120, callback: ( value, index, ticks ) => { return value + ' d'; } } } ] } }
+            } );
+
+            let cti = document.getElementById( 'axialChart' );
+            let i = new Chart( cti, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Axial Tilt (º)',
+                            data: axialData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 155, 89, 182, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 180, callback: ( value, index, ticks ) => { return value + ' º'; } } } ] } }
+            } );
+
+            let ctj = document.getElementById( 'inclinChart' );
+            let j = new Chart( ctj, {
+                    type: 'line',
+                    data: {
+                        labels: planetList,
+                        datasets: [ {
+                            label: 'Inclination (º)',
+                            data: inclinData,
+                            pointBorderColor: defaultColor,
+                            pointBackgroundColor: phBkgrdColor,
+                            pointHoverRadius: hoverRadii,
+                            pointHoverBackgroundColor: phBkgrdColor,
+                            backgroundColor: 'rgba( 142, 68, 173, 1.0 )'
+                        } ]
+                    },
+                    options: { scales: { yAxes: [ { ticks: { max: 20, callback: ( value, index, ticks ) => { return value + ' º'; } } } ] } }
+            } );
+
+        </script>
 	</body>
 </html>
