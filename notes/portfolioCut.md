@@ -1,4 +1,4 @@
-cientists
+# Scientists
 - ### Galileo Galilei *(1564 - 1642)*
 	- Used a slope to measure speed of free fall
 - ### Isaac Newton *(1642 - 1727)*
@@ -565,6 +565,5 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
 [1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
-
 
 
