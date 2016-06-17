@@ -123,26 +123,6 @@
 							<a>Pluto</a>
 							<br/><br/>
 							<table id="example" class="display" cellspacing="0" width="80%">
-						        <thead>
-						            <tr>
-						                <th>average-orbital-distance-km</th>
-						                <th>average-orbital-distance-au</th>
-						                <th>diameter-km</th>
-						                <th>diameter-de</th>
-						                <th>mass-kg</th>
-						                <th>mass-me</th>
-						            </tr>
-						        </thead>
-						        <tfoot>
-						            <tr>
-						                <th>average-orbital-distance-km</th>
-						                <th>average-orbital-distance-au</th>
-						                <th>diameter-km</th>
-						                <th>diameter-de</th>
-						                <th>mass-kg</th>
-						                <th>mass-me</th>
-						            </tr>
-						        </tfoot>
 						    </table>
 						</div>
 					</div>
@@ -228,51 +208,43 @@
 				let table = $( '#example' ).DataTable( {
 			        data: data,
 					columns: [
-						{ title: 'planet' },
-						{ title: 'average-orbital-distance-km' },
-						{ title: 'average-orbital-distance-au' },
-						{ title: 'diameter-km' },
-						{ title: 'diameter-de' },
-						{ title: 'mass-kg' },
-						{ title: 'mass-me' },
-						{ title: 'orbital-period-days' },
-						{ title: 'orbital-period-years' },
-						{ title: 'orbit-circumfrence-au' },
-						{ title: 'average-orbital-speed-au-yr' },
-						{ title: 'average-orbital-speed-km-hr' },
-						{ title: 'average-orbital-speed-mph' },
-						{ title: 'sunlight-to-object-m' },
-						{ title: 'surface-temperature-k' },
-						{ title: 'period-of-rotation-days' },
-						{ title: 'period-of-rotation-hours' },
-						{ title: 'axial-tilt' },
-						{ title: 'inclination' },
-						{ title: 'perihelion-au' },
-						{ title: 'aphelion-au' },
-						{ title: 'eccentricity' },
-						{ title: 'period-squared' },
-						{ title: 'area-cubed' },
-						{ title: 'period-squared-area-cubed-ratio' },
-						{ title: 'flattening' },
-						{ title: 'moons' },
-						{ title: 'surface-gravity-m-s-s' },
-						{ title: 'surface-gravity-g' },
-						{ title: 'escape-velocity-kms' },
-						{ title: 'density-g-cm' },
-						{ title: 'equatorial-rotation-velocity' },
-						{ title: 'albedo' }
+						{ title: 'Planet' },
+						{ title: 'Average Orbital Distance (Km)' },
+						{ title: 'Average Orbital Distance (AU)' },
+						{ title: 'Diameter (Km)' },
+						{ title: 'Diameter (DE)' },
+						{ title: 'Mass (Kg)' },
+						{ title: 'Mass (ME)' },
+						{ title: 'Orbital Period (days)' },
+						{ title: 'Orbital Period (years)' },
+						{ title: 'Orbit Circumfrence (au)' },
+						{ title: 'Average Orbital Speed (AU/yr)' },
+						{ title: 'Average Orbital Speed (KmH)' },
+						{ title: 'Average Orbital Speed (MPH)' },
+						{ title: 'Sunlight to Object (m)' },
+						{ title: 'Surface Temperature (ºk)' },
+						{ title: 'Period of Rotation (days)' },
+						{ title: 'Period of Rotation (hours)' },
+						{ title: 'Axial Tilt' },
+						{ title: 'Inclination' },
+						{ title: 'Perihelion (AU)' },
+						{ title: 'Aphelion (AU)' },
+						{ title: 'Eccentricity' },
+						{ title: 'Period^2' },
+						{ title: 'Area^3' },
+						{ title: 'Period^2~Area^3' },
+						{ title: 'Flattening' },
+						{ title: 'Moons' },
+						{ title: 'Surface Gravity m/s/s' },
+						{ title: 'Surface Gravity (g)' },
+						{ title: 'Escape Velocity (Km/s)' },
+						{ title: 'Density g/cm' },
+						{ title: 'Equatorial Rotation Velocity' },
+						{ title: 'Albedo' }
 					],
-					'scrollY': 600,
-					'scrollX': true
+					scrollY: 600,
+					scrollX: true
 			    } );
-
-				$('#example tbody')
-					.on( 'mouseenter', 'td', () => {
-						let colIdx = table.cell(this).index().column;
-
-						$( table.cells().nodes() ).removeClass( 'highlight' );
-						$( table.column( colIdx ).nodes() ).addClass( 'highlight' );
-					} );
 			} );
 
 			jQuery( document ).ready( () => {
