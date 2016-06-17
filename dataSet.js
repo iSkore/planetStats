@@ -27,10 +27,12 @@ const
             'period-squared-area-cubed-ratio': null,
             'flattening': 0,
             'moons': null,
-            'surface-gravity-m-s-s': 275,
-            'surface-gravity-g': 28,
-            'escape-velocity-kms': null,
-            'density-g-cm': null
+            'surface-gravity-m-s-s': 273.80,
+            'surface-gravity-g': 27.94,
+            'escape-velocity-kms': 618,
+            'density-g-cm': 1.408,
+            'equatorial-rotation-velocity': null,
+            'albedo': null
         },
         'Mercury': {
             'average-orbital-distance-km': 57900000,
@@ -62,7 +64,9 @@ const
             'surface-gravity-m-s-s': 3.7,
             'surface-gravity-g': 0.378,
             'escape-velocity-kms': 4.25,
-            'density-g-cm': 5.427
+            'density-g-cm': 5.427,
+            'equatorial-rotation-velocity': 10.892,
+            'albedo': 0.142
         },
         'Venus': {
             'average-orbital-distance-km': 108200000,
@@ -94,7 +98,9 @@ const
             'surface-gravity-m-s-s': 8.87,
             'surface-gravity-g': 0.905,
             'escape-velocity-kms': 10.36,
-            'density-g-cm': 5.243
+            'density-g-cm': 5.243,
+            'equatorial-rotation-velocity': 6.52,
+            'albedo': 0.67
         },
         'Earth': {
             'average-orbital-distance-km': 149600000,
@@ -115,9 +121,9 @@ const
             'period-of-rotation-hours': 24,
             'axial-tilt': 23.5,
             'inclination': 0,
-            'perihelion-au': null,
-            'aphelion-au': null,
-            'eccentricity': null,
+            'perihelion-au': 0.98,
+            'aphelion-au': 1.02,
+            'eccentricity': 0.017,
             'period-squared': 1,
             'area-cubed': 1,
             'period-squared-area-cubed-ratio': 1,
@@ -126,7 +132,9 @@ const
             'surface-gravity-m-s-s': 9.8,
             'surface-gravity-g': 1,
             'escape-velocity-kms': 11.2,
-            'density-g-cm': 5.514
+            'density-g-cm': 5.514,
+            'equatorial-rotation-velocity': 1674,
+            'albedo': 0.367
         },
         'Mars': {
             'average-orbital-distance-km': 227900000,
@@ -158,14 +166,16 @@ const
             'surface-gravity-m-s-s': 3.71,
             'surface-gravity-g': 0.379,
             'escape-velocity-kms': 5.027,
-            'density-g-cm': 3.93
+            'density-g-cm': 3.93,
+            'equatorial-rotation-velocity': 868.22,
+            'albedo': 0.17
         },
         'Vesta': {
             'average-orbital-distance-km': 353355200,
             'average-orbital-distance-au': 2.36,
             'diameter-km': 525.4,
             'diameter-de': 0.041,
-            'mass-kg': 259000000000000000000,
+            'mass-kg': 2.59e+20,
             'mass-me': 0.000043,
             'orbital-period-days': 1325,
             'orbital-period-years': 3.63,
@@ -190,14 +200,16 @@ const
             'surface-gravity-m-s-s': 0.22,
             'surface-gravity-g': 0.022,
             'escape-velocity-kms': 0.3631,
-            'density-g-cm': 3.42
+            'density-g-cm': 3.42,
+            'equatorial-rotation-velocity': 414.4,
+            'albedo': 0.423
         },
         'Ceres': {
             'average-orbital-distance-km': 414018000,
             'average-orbital-distance-au': 2.77,
             'diameter-km': 939.2,
             'diameter-de': 0.074,
-            'mass-kg': 896000000000000000000,
+            'mass-kg': 8.96e+20,
             'mass-me': 0.00015,
             'orbital-period-days': 1680,
             'orbital-period-years': 4.6,
@@ -222,7 +234,9 @@ const
             'surface-gravity-m-s-s': 0.27,
             'surface-gravity-g': 0.028,
             'escape-velocity-kms': 0.51,
-            'density-g-cm': 2.08
+            'density-g-cm': 2.08,
+            'equatorial-rotation-velocity': 333.4,
+            'albedo': 0.09
         },
         'Jupiter': {
             'average-orbital-distance-km': 778300000,
@@ -254,7 +268,9 @@ const
             'surface-gravity-m-s-s': 24.79,
             'surface-gravity-g': 2.53,
             'escape-velocity-kms': 59.5,
-            'density-g-cm': 1.326
+            'density-g-cm': 1.326,
+            'equatorial-rotation-velocity': 45300,
+            'albedo': 0.52
         },
         'Saturn': {
             'average-orbital-distance-km': 1429000000,
@@ -286,7 +302,9 @@ const
             'surface-gravity-m-s-s': 10.44,
             'surface-gravity-g': 1.065,
             'escape-velocity-kms': 35.5,
-            'density-g-cm': 0.687
+            'density-g-cm': 0.687,
+            'equatorial-rotation-velocity': 35500,
+            'albedo': 0.47
         },
         'Uranus': {
             'average-orbital-distance-km': 2871000000,
@@ -318,7 +336,9 @@ const
             'surface-gravity-m-s-s': 8.69,
             'surface-gravity-g': 0.887,
             'escape-velocity-kms': 21.3,
-            'density-g-cm': 1.271
+            'density-g-cm': 1.271,
+            'equatorial-rotation-velocity': 9320,
+            'albedo': 0.51
         },
         'Neptune': {
             'average-orbital-distance-km': 4498000000,
@@ -350,7 +370,9 @@ const
             'surface-gravity-m-s-s': 11.15,
             'surface-gravity-g': 1.138,
             'escape-velocity-kms': 23.5,
-            'density-g-cm': 1.638
+            'density-g-cm': 1.638,
+            'equatorial-rotation-velocity': 9648,
+            'albedo': 0.41
         },
         'Pluto': {
             'average-orbital-distance-km': 5915000000,
@@ -382,6 +404,46 @@ const
             'surface-gravity-m-s-s': 0.62,
             'surface-gravity-g': 0.063,
             'escape-velocity-kms': 1.212,
-            'density-g-cm': 1.86
+            'density-g-cm': 1.86,
+            'equatorial-rotation-velocity': 47.18,
+            'albedo': 0.5
         }
     };
+    let table = $( '#example' ).DataTable( {
+        data: data,
+        columns: [
+            { title: 'planet' },
+            { title: 'average-orbital-distance-km' },
+            { title: 'average-orbital-distance-au' },
+            { title: 'diameter-km' },
+            { title: 'diameter-de' },
+            { title: 'mass-kg' },
+            { title: 'mass-me' },
+            { title: 'orbital-period-days' },
+            { title: 'orbital-period-years' },
+            { title: 'orbit-circumfrence-au' },
+            { title: 'average-orbital-speed-au-yr' },
+            { title: 'average-orbital-speed-km-hr' },
+            { title: 'average-orbital-speed-mph' },
+            { title: 'sunlight-to-object-m' },
+            { title: 'surface-temperature-k' },
+            { title: 'period-of-rotation-days' },
+            { title: 'period-of-rotation-hours' },
+            { title: 'axial-tilt' },
+            { title: 'inclination' },
+            { title: 'perihelion-au' },
+            { title: 'aphelion-au' },
+            { title: 'eccentricity' },
+            { title: 'period-squared' },
+            { title: 'area-cubed' },
+            { title: 'period-squared-area-cubed-ratio' },
+            { title: 'flattening' },
+            { title: 'moons' },
+            { title: 'surface-gravity-m-s-s' },
+            { title: 'surface-gravity-g' },
+            { title: 'escape-velocity-kms' },
+            { title: 'density-g-cm' },
+            { title: 'equatorial-rotation-velocity' },
+            { title: 'albedo' }
+        ]
+    } );
