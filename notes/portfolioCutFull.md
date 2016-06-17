@@ -104,11 +104,17 @@
 - ### Kepler's Laws
 	- **$1^{st}$ Law**
 		- Orbital Ellipse is *not* a circle
+		- $A = \pi ab$
+		- The eccentricity ε is the coefficient of variation between $r_{min}$ and $r_{max}$:
+			- $\epsilon = \frac{r_{max} - r_{min}}{r_{max} + r_{min}}$
 	- **$2^{nd}$ Law**
 		- Orbit sweeps same area in equal time
+		- $n = \frac{2\pi}{P}$
+		- $\frac{dA}{dt} = \frac{1}{2}r^2\frac{d\theta}{dt}$
 	- **$3^{rd}$ Law**
-		- $\ p^2 = a^3 $
 		- The orbital period (in years) squared is proportionate (~) to the distance in AU's cubed
+		- $\ p^2 = a^3 $
+		- $\frac{P^2}{a^3} ≈ \frac{4\pi^2}{GM}$
 
 - ### Acceleration of Gravity
 	- All falling objects accelerate at the same rate (not counting friction of air resistance
@@ -128,18 +134,10 @@
 	- **Kinetic (motion)**
 	- **Radiative (light)**
 	- **Potential (stored)**
-	- The combination of energy and matter makes up all of the universe
-	- Energy can be transferred from one object to another *or* from one form to another
-	- Mass is a form of potential energy
-	- $ E = mc^2 $ (*very* little energy is needed to make a lot of energy)
-	- A small amount of mass can release a great deal of energy
 	- Energy is measure in **Joules**
 		- $ 1_{Joule} = 1_{kg} • \frac{m}{s}^2 $
 
 - ### Conservation Laws
-	- The amount of energy in a system doesn't change
-	- Total energy is always conserved
-	- Laws of physics are unchanging in time
 	- Conservation of energy (time)
 	- Conservation of momentum (position)
 	- Conservation of angular momentum (direction)
@@ -147,8 +145,6 @@
 - ### Thermal Energy
 	- Lower temperature: slower moving particles
 	- Higher temperature: faster moving particles
-	- Temperature is the *average* kinetic energy
-	- Thermal energy is the *total* kinetic energy of all the particles
 
 - ### Gravitational Potential Energy
 	- Mass, gravity, height
@@ -156,17 +152,13 @@
 
 - ### Dark Energy
 	- `68.3%` dark energy - `26.8%` dark matter - `4.9%` matter
-	- Biggest mystery in all of physics
+	- *Biggest mystery in all of physics*
 
 - ### Angular momentum
 	- An object's angular momentum cannot change unless an external twisting force (torque) is exerted
-	- Kepler's $2^{nd}$ law revisited
-		- Sweeps out equal areas in equal times
-		- $ m • v_{small} • a_{large} = m • v_{large} • a_{small} $
 
 - ### Kepler - $2^{nd} $ Law
 	- $ F\ $~$\ m_1m_2 $
-	- Force between two massive objects decreases with distance (to center)
 	- $ F = m • g $
 
 	- $ a = g = \frac{g}{1^2} $
@@ -174,10 +166,6 @@
 	- $F_G = \frac{G • M_1 • M_2}{d^2} $
 	- $ G = 6.67 • 10^{-11} N \frac{m^2}{kg^2} $
 	- Every object in the universe attracts every other particle in the universe
-	- Example:
-		- $ a_{rock} = \frac{F_G}{M_{rock}} $
-
-		- $ a_{rock} = \frac{ G • \frac{ M_{earth} • M_{rock} }{( R_{earth} )^2}}{M_{rock}} $
 
 - ### Kepler - $3^{rd} $ Law
 	- $ p^2 = \frac{4\pi^2}{G(m_1 + m_2)}•a^3 $ *or* $ M_1 + M_2 = \frac{4\pi^2}{G}\frac{a^3}{p^2} $
@@ -190,28 +178,7 @@
 		- friction or atmospheric drag
 		- gravitational encounter
 
-- ### Tides
-	- Rise and fall of sea levels caused by the gravitational forces
-	- How does gravity cause tides?
-		- Tides are caused by gravity pulling on the bodies of water on the Earth and upon the earth itself
-		- The difference in moons gravitational pull stretches the earth
-	- Side of the tides depends on the phase of the moon
-		- The sun is a factor as well
-		- During a new moon, the tides are larger because moon and sun pulls
-		- During a full moon, the tides are just as large because the moon and sun pull in both directions (takes away from middle)
-		- **neap** - when the moon and sun are not aligned to create large tides
-	- Synchronous rotation - the moon and the sun rotate at the same amount
-	- **Tidal heating** - Tidal forces are important source of heat on many moons
-	- **Roche limit** - this occurs when the tidal forces exceed the internal gravity of an object
-		- Created the Saturn ring
-	- **Cryovolcanism** - Water shoots out from the crust due to gravity orbit
-
 - ### Light and Matter
-	- Hicks Bozum
-	- 6 corks
-		- Atom's proton and neutrons
-	- 6 limptons
-		- Atom's electrons
 	- 4 forces of nature
 		- Gravity (infinitely extends throughout universe)
 		- Electromagnetism (infinitely extends throughout universe)
@@ -241,80 +208,48 @@
 		- **Dissociation** - Breaking of molecules into atoms
 		- **Ionization** - Stripping of elections changing the atom
 
+<center>![u][24]</center>
+[24]: http://iskore.github.io/planetStats/portfolio/img/matter.png
+<!--CITATION-->
+<!-- src="https://www.tes.com/lessons/F6IxO_VEePBTHA/copy-of-solids-liquids-gas" -->
 
 # Light and Waves
 
 - ### Light
-	- Radiative energy
+	- Radiative energy, Emission, Absorption, Transmission, Reflect/Scatter light
 	- Measured in `Watts` - $\frac{1 J}{s}$
-	- Emission
-	- Absorption
-	- Transmission
-		- Transparent objects transmit light
-		- Opaque objects absorb light
-	- Reflect/Scatter light
-		- Mirror (smooth surface) - reflects back at equal angle
-		- Water (rough surface) - reflects back at different angles when choppy
-	- Blue jeans reflect blue light and absorbs the other colors
-	- Light can act either like a wave or like a particle
-	- Light wave is a vibration of electric and magnetic fields
-	- #### Particles of Light
-		- Each photon has a wavelength and frequency
-		- The energy of a photon depends on its frequency:
-		- $E = h • f$
-		- $h = 6.626 • 10^{-34} Joule•s$ is the Planck constant
 
 - ### Waves
 	- Wavelength - measurement from crest to crest
 	- Frequency - number of crest that pass through per second
 	- Light - $c$
 	- $c ≈ 3 • 10^8 \frac{m}{s}$
-	- #### Frequency
-		- Measured in hertz
-		- $\lambda • f = c$
 	- **Order**
 		- Gamma rays - x-rays - ultraviolet - visible - infrared - radio
-	- We only see a tiny sliver of the electromagnetic spectrum: about $400\ nm$ to $750\ nm$
-	- The basics of spectrum be broken into three types: emission line spectrum, continuous spectrum, absorption spectrum
-	- An object's thermal radiation spectrum depends only on temperature
 
-- ### Termal Radiation
-	- Stephan-Boltzmann Law
-		- Hotter objects emit more light per unit area at all energies
-		- Emitted power ~ $T^4$
-	- Wien's Law
-		- $\lambda_{max} $~$ \frac{1}{T}$
+<center>![u][25]</center>
+[25]: http://iskore.github.io/planetStats/portfolio/img/lightspec.jpg
 
-- ### Continuous Spectrum
-	- Comes from hot substance (light bulb) - white light
-	- Reflected white light that isn't absorbed or emitted
+<!--CITATION-->
+<!-- src="http://www.illinoislighting.org/lightcolor.html" -->
 
-- ### Emission Line Spectrum
-	- Hydrogen spectrum
-		- Emits $410.1 nm,\ 434.0 nm,\ 486.1 nm,\ 656.3 nm$
-		- As seen through the prism glasses - Hydrogen emits a unique bar code that can be seen
-	- Chemical bar code is seen when substance is heated
-
-- ### Absorption Line Spectrum
-	- Cloud absorbs certain wavelengths at the exact same length as they emit when heated
-	- Example: Hydrogen emits $410.1 nm,\ 434.0 nm,\ 486.1 nm,\ 656.3 nm\ $ when heated and **absorbs** the same frequencies when light passes through
-
+- Termal Radiation
+- Continuous Spectrum
+- Emission Line Spectrum
+- Absorption Line Spectrum
 - ### Telescopes
 	- Refraction
-		- Refraction is the bending of light when it passes from one substance into another
+		- Bending of light when it passes from one substance into another
 	- Light-collecting area
-		- Circular area
-			- $Area = \pi(\frac{diameter}{2})^2$
-		- KECK - 10 m diameter (Hawaii Telescope)
+		- Circular area: $Area = \pi(\frac{diameter}{2})^2$
 	- Angular resolution
 		- Human eye = 1 arc minute
-		- If two sources of light are more than one arc-minute away they appear to be one source of light (like a car)
+		- If two sources of light are more than one arc-minute away they appear to be one source of light
 		- Limit on Angular resolution is called *defraction limit*
 	- Refracting Telescope
 		- First made by Galileo
 		- Use lenses to focus light
 	- Reflecting Telescope
-		- First made by Newton
 		- Curved mirror will reflect light to one focal point
 	- Three uses of telescopes
 		- Imaging
@@ -325,26 +260,16 @@
 			- A light curve represents a series of brightness measurements made over a period of time
 	- Adaptive optics
 		- A computer that suction cups the mirrors to bend its shape as needed
-	- Where to have a telescope
-		- Calm wind, high altitude, dark area, dry conditions
 
-# Terestrial Planet System - Planetary Geology
+# Terrestrial Planet System
 - Terrestrial planets
 	- Earth's density - $5.5\frac{g}{cm^3}$
 	- As low as $3\frac{g}{cm^3}$
 - Seismic Waves
-	- **P-Wave**
-		- Sound waves - compression passing through
-	- **S-Wave**
-		- Shake matter side-by-side
-		- Cannot travel through water
+	- **P-Wave**: Sound waves - compression passing through
+	- **S-Wave**: Shake matter side-by-side and cannot travel through water
 - Earth's Interior
-	- Rocky crust (low density)
-	- Mantle (mid density)
-	- Metal core (high density)
-	- Lithosphere
-		- Planet's outer layer of cool rigid rock
-		- "Floats" on the rocky crust
+	- Rocky crust (low density), Mantle (mid density), Metal core (high density), Lithosphere (top layer)
 
 - Geological Activity
 	- Accretion and Differentiation when planets were young
@@ -354,36 +279,17 @@
 		- **Convection** - transports heat as hot material rises and cool material falls
 		- **Conduction** - transfers heat from hot material to cool material by contact
 		- **Radiation** - sends energy into space
-	- Surface area-to-volume ratio
-		- Heat content depends on volume
-		- $\frac{4 \pi r^2}{\frac{4}{3} \pi r^3} = \frac{3}{r}$
-		- Larger objects have a smaller ratio and cool more slowly
-	- Craters
-		- Provide information about conditions on the surface
-	- Volcanic
-		- Outgassing
-		- Tectonics - transfers heat from the core to the Lithosphere
-	- No plate tectonics on Venus
-	- Earth is the only terrestrial planet in our solar system that has tectonic plates
-
-- Tectonics
-    - Plate Motions
-        - Measurements of plate motions tell us past and future layout of the continents
+	- Surface area-to-volume ratio: $\frac{3}{r}$
     - Two types of crust
         - **Seafloor crust** is (5-10km) and denser continental crust
         - **Continental crust** is thicker (20-70km)
-    - Seafloor recycled - called subduction
-    - Types of movement
-        - Convergent
-        - Transform
-        - Divergent
-    - Type of Erosion
-        - Rivers
-        - Glacial
-        - Wind
+        - **Types of movement**: Convergent, Transform, Divergent
+    - **Type of Erosion**: Rivers, Glacial, Wind
+    - Atmosphere
+        - Pressure at sea level is 1kg per $cm^2$ ($\frac{10N}{cm^2}$
+        - Troposphere (ground level), Stratosphere, Mesosphere, Thermosphere, Exosphere
     - Global Magnetic Field
-        - Compasses point *north* because the north magnetic pole is in the *south* - opposites repel
-        - Sources of magnetic fields must have **Molten interior**, **convection**, **moderately rapid rotation**
+        - Compasses point *north* because the north magnetic pole is in the *south*
     - Earth-sun connection
         - Solar wind hits magnetic field of the earth
         - Affects spacecraft, power lines, pipelines, navigation and communication systems, satellites, etc.
@@ -392,13 +298,51 @@
         - Below 100km - Nitrogen pink/crimson
         - 100km - 200km - Nitrogen green and blue
         - Above 200km - Nitrogen red
-- Atmosphere
-    - Layer of gas that surrounds a world
-    - Pressure at sea level is 1kg per $cm^2$ ($\frac{10N}{cm^2}$)
-    - Absorb and scatter light
-    - Create wind, weather, climate
-    - Interacts with solar wind to create a magnetosphere
-    - Makes planetary surfaces warmer through the greenhouse effect
+
+Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 at 0115
+>*Images were save every five minutes and combined into a `gif`*
+>Simultaneous, I photographed the solar storm as seen from:
+> **Lat**: 65.411610 **Long**: -146.049788
+> On March 6, 2016 at ~0300
+
+![u][26]
+
+![u][28]
+
+
+[26]: http://iskore.github.io/planetStats/portfolio/img/aurloop.gif
+[27]: http://www.gi.alaska.edu/auroraforecast
+[28]: http://iskore.github.io/planetStats/portfolio/img/aurora.jpg
+
+<!--CITATION-->
+<!-- src="http://www.illinoislighting.org/lightcolor.html" -->
+
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit171.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit195.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit284.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit304.mp4" type="video/mp4">
+</video>
+<br/>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/hdimagne.mp4" type="video/mp4">
+</video>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/hmiconti.mp4" type="video/mp4">
+</video>
+<br/>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/lascoc2.mp4" type="video/mp4">
+</video>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/lascoc3.mp4" type="video/mp4">
+</video>
 
 >Atmosphere
 >----------
@@ -434,111 +378,37 @@
 >|---------|-------|-------|------|------|
 >|   null  | 510ºC |  31ºC | null | 6ºC  |
 
-- Light effects on Atmosphere
-    - Troposphere (ground level)
-    - Stratosphere
-    - Mesosphere
-    - Thermosphere (100km +)
-    - Exosphere - highest layer - atmosphere fades into space
-- Why is the sky blue?
-    - Atmosphere scatters blue light from the Sun, making it appear to come from different directions
-
-
-### History of Earth's Atmosphere
-- 1: Creation of earth
-- 2: *4.4 Billion years ago*
-    - outgassing - $H_2O$, $CO_2$, $N_2$
-    - Fundamental features of the *Carbon Cycle*
-- 3: *2.4 Billion years ago*
-    - $O_2$ started appearing
-    - First living organisms called *cyanobacteria* formed
-        - Required $CO_2$ - $O_2$ was toxic
-- Why does Earth's climate stay stable?
-    - $CO_2$ Cycle
-    - Atmospheric $CO_2$
-    - Rain erodes minerals that flow into the ocean
-    - Minerals combine with carbon to make rocks on ocean floor
-    - Subduction carries carbonate rock down into mantle
-    - Rock melts in mantle and $CO_2$ is outgassed  back into atmosphere through volcanoes
-- Ozone and the Stratosphere
-    - Ultraviolet light can break up $O_2$ molecules, allowing ozone $O_3$ to form
-    - Human made chlorofluorocarbons in the atmosphere destroy ozone, reducing protection from UV light
-    - $CO_2$ Concentration
-- Thermohaline Circulation
-
-### Atmosphere of Venus
-- Reflective sulphuric acid clouds
-- High pressure
-
-### Atmosphere of Mars
-- Water-ice clouds
-- Winds as fast as $400\frac{km}{h}$
-- Polar caps
-- Dust storms cover planet
-
 # Jovian Planet Systems
 - Jupiter
     - Largest mass
     - Mostly helium, hydrogen, oxygen, etc.
     - Interiors of planets
-        - Little is known about how matter exsists and reacts inside a "gas giant"
-        - Metallic hydrogen core (we know very little about how this works/exsists)
         - 1 bar surface - gas hydrogen
         - 500,000 bar - liquid hydrogen
         - 2,000,000 bar - metallic hydrogen (78% of the radius and 10,000ºK)
         - 100,000,000 bar - Core (unknown - ~36,000ºK)
-    - Galileo satelitte
-    - Ammonia - ammonium hydrosulfide - water
-    - No seasons - ~3% axis tilt
     - Rapid rotation keeps planet in a constant state of storm
-    - Convection and coriolis effect caused the layers/rings along its latatude
-    - Snows ammonia in troposphere
-    - Storm spot - gigantic storm twice the size of Earth with counterclockwise circulation
-        - Opposite of a hurricane, winds are flowing outwards due to high pressure (hurricanes flow inwards because low pressure center)
-        - Might be a permanent stable feature
-        - Clouds are 8km above other surrounding clouds
-        - Winds ~270mph at surface but are stagnant underneath
-        - Rotating metallic hydrogen creats magnetic field
-            - Has bright blue aurora
-            - Has high effect on surrounding moons and creates magnetosphere
-            - Io's volcanic surface blasts particles into magnetosphere
-        - Axis of rotation very close to magnetic pole
+    - Convection and Coriolis effect caused the layers/rings along its latitude
 - Saturn
-    - Large rings
-    - Much less massive than Jupiter
-    - 12,000ºK Core
-    - Cloud layers similar to Jupiter's but buried because of cooler temperatures
-    - Mathane - ammonia - ammonium hydrosulfide - water
-    - Very little seasonal change - emits so much energy
+    - Much less massive than Jupiter - 12,000ºK Core
     - $1100_{mph} \ or \ 550\frac{m}{s}$ winds (unknown reason)
-    - "Storm Alley" in saturn's southern latitudes
     - Lightning 1000 times more powerful than anything on Earth
     - Only hot polar vortex in the solar system
     - North and south poles emit heat - unlike most that emit cold radiation
     - Hexagon shaped southern pole (unknown reason)
-    - Most planets have polar vortex but not in a hexagon shape
 - Uranus
     - 14 times Earth's mass
-    - No solid surface
     - Density of $1.3\frac{g}{cm^3}$ indicates that it is made primarily of various ices ($H_2O$, ammonia, methane)
-    - 9.3 to 13.5 times earth masses
-    - Voyager 2 passby in the late 1980's
     - Ice mantle is not composed of ice - actually hot and dense fluid consisting of water ammonia ocean
     - Gaseous atmosphere gradually transitions into the internal liquid layers
-    - Above certain temperatures, gases turn to liquids
-    - Vertually emits no excess heat (unknown reason)
-    - Mathane - ammonia
-    - Hot thermosphere that extends thousands of miles above surface (unknown reason)
     - 60º magnetic field tilt to the axis of rotation (might be from massive impact that knocked it on its side, unknown)
 - Neptune
     - 17 times Earth's mass
-    - Voyager 2 passby in the late 1980's
     - Atmosphere forms about 5%-10% of the planet
     - Mantle is ~2,000ºK - 5,000ºK
-    - At the depth of 7000km, the conditions may be such that mathan decomposes into diamond crystals that rain towards the core like hailstones
+    - At the depth of 7000km, the conditions may be such that methane decomposes into diamond crystals that rain towards the core like hailstones
     - Liquid diamond ocean with diamond-bergs floating around
     - Emits 2.6 times more energy than it receives (unknown reason)
-    - Methane - ammonia
     - Tilt close to earth's but no seasonal changes due to massive internal heat
     - 46º magnetic field tilt to the axis of rotation (entirely unknown reason)
 
@@ -557,24 +427,18 @@
 - 200 moons in the Jovian Planet system, 3 in the terrestrial system (2 Mars, 1 Earth)
 - Small moons (below 300 km)
     - No geological activity
+    - Potato-shaped - Very low density
+    - Probably captured asteroids or comets
+    - Calypso, Pandora, Telesto, Hyperion, Phoebe, Janus
 - Medium-sized moons (300-1500 km)
     - Past (some ongoing) geological activity
-- Large moons (1500 km)
-    - Ongoing geological activity
-- Mid-sized and Large moons
-    - Enough self-gravity to be spherical
-    - Lots of ice
-    - circular orbits and are large enough to create tides
+    - Enough self-gravity to be spherical - Lots of ice
     - Jupiter: Io, Europa, Ganymede, Callisto
     - Saturn: Titan, Lapetus, Rhea, Dione, Tethys, Enceladus, Mimas
     - Uranus: Oberon, Titania, Umbriel, Ariel, Miranda
     - Neptune: Triton, Nereid
-- Small moons
-    - Potato-shaped
-    - Probably captured asteroids or comets
-    - Little to no geological activity (exception cratering)
-    - Very low density
-    - Calypso, Pandora, Telesto, Hyperion, Phoebe, Janus
+- Large moons (1500 km)
+    - Ongoing geological activity
 
 ### Jupiter's moons
 - **Io**
@@ -587,19 +451,19 @@
     - Inner iron or iron sulfide core (20% of mass)
     - 12-40km thick lithosphere
     - How does Io get heated by Jupiter? *Tidal Resonance*
-    - Tidal Resonance creates heat by squishing and streching the planet as it orbits
+    - Tidal Resonance creates heat by squishing and stretching the planet as it orbits
     - Io gets 200 times more heat from tidal forces than Earth gets from radioactivity
-    - Elliptical orbit flexs Io's shape
+    - Elliptical orbit flexes Io's shape
     - 4 Io orbits = 2 Europa orbits = 1 Ganymede orbits
     - This keeps orbit of Io elliptical
     - Orbital Resonance
 - **Europa**
     - Smoothest body in the solar system
-    - No verticle features (mountains, creators, trenches, etc.)
+    - No vertical features (mountains, creators, trenches, etc.)
     - Covered in water ice
     - Massive water ocean under ice crust - believe this because all ice cracks are filled in quickly
     - Lineae are the dominant surface feature - cracks in the ice
-    - Tital flexing keeps subsurface ocean liquid (not ice)
+    - Tidal flexing keeps subsurface ocean liquid (not ice)
     - Surface about 50ºK - 110ºK
     - Ice *might* be 200m - 10km thick (unknown)
     - Metallic core
@@ -611,7 +475,7 @@
     - Light regions: younger (but still ancient). Indications of water or ice
     - Least effected by orbital resonance
     - Confirmed interior ocean
-    - Might have asyncronous orbital rotation inside
+    - Might have asynchronous orbital rotation inside
 - **Callisto**
     - Heavily cratered indicating an old surface that might hide a deeply buried ocean
     - Interior is mostly mixed up of metal and rock
@@ -627,7 +491,7 @@
 - **Titan**
     - Atmosphere of Methane
     - Probe detected "squishy" surface
-    - Ersoion by liquid and wind
+    - Erosion by liquid and wind
     - Ice-six (tetragonal crystals - not familiar with this formation of ice)
 - **Iapetus**
     - "the painted moon"
@@ -672,6 +536,13 @@
 - Particles frequently collide but move at same velocities - collision is very gentle
 - "Shepard moons" that live within the rings
 - Rings form when Moons are broken apart at the roche limit
+
+### Asteroids
+- Chariklo is surrounded by two dense and narrow rings
+- Ceres ~ 950km - 32% the mass of moon
+- Pallas ~ 544km
+- Vesta ~ 525km
+- Some astroids have their own moons (Ida)
 
 # Planet's - Auxiliary
 - Ceres made "Planet"
@@ -783,11 +654,9 @@ Exoplanets
     - $f$ (pitch)
     - *Apparent change in frequency* as an object moves past a stationary object
     - If object is moving towards us, the emission-line spectrum will be blue shifted
-    - If object is moving away from us, the emission-line spectrum will be red shited
+    - If object is moving away from us, the emission-line spectrum will be red shifted
     - Highly eccentric orbits look like ocean waves on doppler shift data
     - Lower eccentric orbits look like a sine wave
-
-
 
 -------------------------------
 # Portfolio
@@ -827,10 +696,8 @@ Exoplanets
 - If ice can squish and stretch more than rock with less force - do we have tectonics because the mass of the moon, and the distance of the sun, were just enough to break the crust up? Seen with Enceladus, the ice crust gets fractured and split.
 
 # Include pictures of milky way taken in Aussie
-# Include pictures taken of Northern lights
-
 
 
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
-[1]: http://solarsystem.nasa.gov/missions/voyager2/indepth
+[1]:http://solarsystem.nasa.gov/missions/voyager2/indepth

@@ -104,11 +104,17 @@
 - ### Kepler's Laws
 	- **$1^{st}$ Law**
 		- Orbital Ellipse is *not* a circle
+		- $A = \pi ab$
+		- The eccentricity ε is the coefficient of variation between $r_{min}$ and $r_{max}$:
+			- $\epsilon = \frac{r_{max} - r_{min}}{r_{max} + r_{min}}$
 	- **$2^{nd}$ Law**
 		- Orbit sweeps same area in equal time
+		- $n = \frac{2\pi}{P}$
+		- $\frac{dA}{dt} = \frac{1}{2}r^2\frac{d\theta}{dt}$
 	- **$3^{rd}$ Law**
-		- $\ p^2 = a^3 $
 		- The orbital period (in years) squared is proportionate (~) to the distance in AU's cubed
+		- $\ p^2 = a^3 $
+		- $\frac{P^2}{a^3} ≈ \frac{4\pi^2}{GM}$
 
 - ### Acceleration of Gravity
 	- All falling objects accelerate at the same rate (not counting friction of air resistance
@@ -166,29 +172,15 @@
 	- How to find the mass of a planet
 
 - ### Tangential speed
-	- If object is shot at 8 km/s - it will become a satellite
+	- Exit Velocity on Earth - 8 km/s
 	- Earth escape velocity: $ v_{escape} = 11.2 \frac{km}{s} $
 	- Changing an orbit
 		- friction or atmospheric drag
 		- gravitational encounter
 
-- ### Light and Matter
+- ### Forces
 	- 4 forces of nature
-		- Gravity (infinitely extends throughout universe)
-		- Electromagnetism (infinitely extends throughout universe)
-		- Strong nuclear force (extends about 15 m maximum)
-		- Weak nuclear force (extends about 15 m maximum)
-	- Protons
-		- Positively charged and carry one unit of positive charge
-	- Electron Cloud
-		- About $10^{-10} meters$
-	- Element
-		- Is defined by *how many elements sit inside the nucleus*
-	- Molecules
-		- Consist of two or more atoms
-	- Isotope
-		- Same number of protons but different number of neutrons ($^4He$, $^3He$)
-			- Changes atomic weight
+		- Gravity ($\infty$), Electromagnetism ($\infty$), Strong nuclear force ($15m_{max}$), Weak nuclear force ($15m_{max}$)
 
 - ### Matter
 	- Types
@@ -255,7 +247,7 @@
 	- Adaptive optics
 		- A computer that suction cups the mirrors to bend its shape as needed
 
-# Terestrial Planet System
+# Terrestrial Planet System
 - Terrestrial planets
 	- Earth's density - $5.5\frac{g}{cm^3}$
 	- As low as $3\frac{g}{cm^3}$
@@ -311,6 +303,39 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
 <!--CITATION-->
 <!-- src="http://www.illinoislighting.org/lightcolor.html" -->
 
+SOHO images taken between 03/01/16 0000 - 03/01/16 2359
+
+EIT Images taken twice a day at 0100 hrs & 1300 hrs
+
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit171.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit195.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit284.mp4" type="video/mp4">
+</video>
+<video width="256" height="256" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/eit304.mp4" type="video/mp4">
+</video>
+<br/>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/hdimagne.mp4" type="video/mp4">
+</video>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/hmiconti.mp4" type="video/mp4">
+</video>
+<br/>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/lascoc2.mp4" type="video/mp4">
+</video>
+<video width="512" height="512" autoplay loop>
+	<source src="http://iskore.github.io/planetStats/portfolio/sun/finals/lascoc3.mp4" type="video/mp4">
+</video>
+
+
+
 >Atmosphere
 >----------
 >| Mercury | Venus | Earth | Moon | Mars |
@@ -355,7 +380,7 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
         - 2,000,000 bar - metallic hydrogen (78% of the radius and 10,000ºK)
         - 100,000,000 bar - Core (unknown - ~36,000ºK)
     - Rapid rotation keeps planet in a constant state of storm
-    - Convection and coriolis effect caused the layers/rings along its latatude
+    - Convection and Coriolis effect caused the layers/rings along its latitude
 - Saturn
     - Much less massive than Jupiter - 12,000ºK Core
     - $1100_{mph} \ or \ 550\frac{m}{s}$ winds (unknown reason)
@@ -373,7 +398,7 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
     - 17 times Earth's mass
     - Atmosphere forms about 5%-10% of the planet
     - Mantle is ~2,000ºK - 5,000ºK
-    - At the depth of 7000km, the conditions may be such that mathan decomposes into diamond crystals that rain towards the core like hailstones
+    - At the depth of 7000km, the conditions may be such that methane decomposes into diamond crystals that rain towards the core like hailstones
     - Liquid diamond ocean with diamond-bergs floating around
     - Emits 2.6 times more energy than it receives (unknown reason)
     - Tilt close to earth's but no seasonal changes due to massive internal heat
@@ -418,19 +443,19 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
     - Inner iron or iron sulfide core (20% of mass)
     - 12-40km thick lithosphere
     - How does Io get heated by Jupiter? *Tidal Resonance*
-    - Tidal Resonance creates heat by squishing and streching the planet as it orbits
+    - Tidal Resonance creates heat by squishing and stretching the planet as it orbits
     - Io gets 200 times more heat from tidal forces than Earth gets from radioactivity
-    - Elliptical orbit flexs Io's shape
+    - Elliptical orbit flexes Io's shape
     - 4 Io orbits = 2 Europa orbits = 1 Ganymede orbits
     - This keeps orbit of Io elliptical
     - Orbital Resonance
 - **Europa**
     - Smoothest body in the solar system
-    - No verticle features (mountains, creators, trenches, etc.)
+    - No vertical features (mountains, creators, trenches, etc.)
     - Covered in water ice
     - Massive water ocean under ice crust - believe this because all ice cracks are filled in quickly
     - Lineae are the dominant surface feature - cracks in the ice
-    - Tital flexing keeps subsurface ocean liquid (not ice)
+    - Tidal flexing keeps subsurface ocean liquid (not ice)
     - Surface about 50ºK - 110ºK
     - Ice *might* be 200m - 10km thick (unknown)
     - Metallic core
@@ -442,7 +467,7 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
     - Light regions: younger (but still ancient). Indications of water or ice
     - Least effected by orbital resonance
     - Confirmed interior ocean
-    - Might have asyncronous orbital rotation inside
+    - Might have asynchronous orbital rotation inside
 - **Callisto**
     - Heavily cratered indicating an old surface that might hide a deeply buried ocean
     - Interior is mostly mixed up of metal and rock
@@ -458,7 +483,7 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
 - **Titan**
     - Atmosphere of Methane
     - Probe detected "squishy" surface
-    - Ersoion by liquid and wind
+    - Erosion by liquid and wind
     - Ice-six (tetragonal crystals - not familiar with this formation of ice)
 - **Iapetus**
     - "the painted moon"
@@ -520,7 +545,110 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
     - **Primitive**: unchanged in composition since they first formed 4.6 B years ago
     - **Processed**: younger - have experienced processes like volcanism or differentiation
 
+### Asteroids
+- Chariklo is surrounded by two dense and narrow rings
+- Ceres ~ 950km - 32% the mass of moon
+- Pallas ~ 544km
+- Vesta ~ 525km
+- Some astroids have their own moons (Ida)
 
+# Auxiliary Information
+- Ceres made "Planet"
+    - 3.6 times more massive than Vesta
+    - Density: $2.08\frac{g}{cm^3}$
+    - Icy core
+- Meteorite Types
+    - **Primitive**: unchanged in composition since they first formed 4.6 B years ago
+    - **Processed**: younger - have experienced processes like volcanism or differentiation
+- Sources of meteorites
+    - 5% - 6% of all meteorites found on Earth originate from Vesta
+    - 99.8% come from asteroid belt
+- Anatomy of a Comet
+    - A *coma* is the atmosphere that comes from a comet's heated nucleus
+    - Dust tail
+    - Plasma tail
+- Oort cloud
+    - Outer most layer of our solar system
+- Any object that orbits the sun is called "Trans-Neptunian Objects"
+    - Pluto, Eris, Makemake, Haumea, Kuiper Belt
+    - Charon has radius two times larger than pluto
+- Pluto
+    - Pluto has experienced rapid climate changes
+    - Charon is half the size of Pluto but much more active
+
+
+### Five Major extinction events
+| Cretaceous-Paleogene | Triassic-Jurassic | Permian-Triassic | Late Devonian | Ordovician-Silurian |
+|----------------------|-------------------|------------------|---------------|---------------------|
+|      65.5 MYA        |     205 MYA       |     251 MYA      |     375 MYA   |       450 MYA       |
+|       75% KIA        |     70% KIA       |     96% KIA      |     70% KIA   |      ~90% KIA       |
+>MYA - Million Years Ago
+>KIA - % Life Extinction
+
+
+# The Sun
+
+- Radius: $6.9 x 10^8 m$ ≈ 110 $R_{Earth}$
+- Mass: $2 x 10^{30}kg$ ≈ 300,000 Earths
+- Density of core ≈ $150 \frac{g}{cm^3}$
+- Mostly Helium and Hydrogen
+- Core ≈ $50,000,000ºK$
+- Sun is powered by nuclear energy (Fusion)
+    - $\frac{Nuclear \ Fusion}{Luminosity} $~$\ 4.6 \ Billion \ Years$
+- Nuclear processes
+    - **Fission** - Big nucleus splits into smaller pieces and releases energy
+    - **Fusion** - Two nuclei combine to make a bigger one and release energy
+        - Two nuclei can combine up to Iron (most stable element)
+- Proton-proton chain - how hydrogen fuses into helium in the Sun
+    - Start with 4 protons, two smash together, one becomes neutron, one stays proton - gives off 1 neutrino and 1 positron for each smash. Another proton smashes into the original hydrogen fuse - releases gamma ray
+    - Outcome - 1$^4HE$ - 0.7% less mass than when it started
+- Radiation zone
+    - Energy transported upward by photons
+    - 32% of volume and 48% of mass
+- Convection zone
+    - 66% of volume and 2% of mass
+    - $0.0000002\frac{g}{cm^3}$
+- Solar rotation
+    - Tachocline - Rotation period / fraction of sun's radius
+- Neutrino
+    - Not obstructed in space
+    - Arrive at Earth 8.5 minutes after they're emitted
+    - 1,500,000 times smaller than electron's mass
+    - Neutrinos are barely affected by anything in the universe
+    - Super-Kamiokande neutrino detector
+- Chromosphere (mid-layer of atmosphere)
+    - Middle layer of solar atmosphere
+    - 2000km deep (rather thin)
+    - Hotter than the photosphere
+    - Gas shooting out of spicules at 50,000kph
+- Corona (upper layer of atmosphere)
+    - rises in millions of kelvin
+    - Average 1MºK - 3MºK
+- Magnetic field
+    - Flips ever 12 years
+    - Sun has many poles during a flip - chaotic magnetic action
+    - Prominences are anchored to the Sun's surface in the photosphere and extend outwards into the corona
+    - Extend millions of kilometers
+- Prominences - Created when N and S magnetic arcs touch at the 'x-point'
+- Flares - Flash of light during reconnection
+- Coronal mass ejection
+    - "X-Class flares" - rare
+    - Takes 1-3 days to reach earth
+        - Shut down transformers and satellites to save them from solar damage
+
+Exoplanets
+- Planet Detection
+    - **Direct**: pictures or spectra of the planets themselves
+    - **Indirect**: measure surrounding area and star to determine location
+    - Methods
+        - Astrometry, Radial velocity, **Transits**, Direct imaging
+- Doppler Effect
+    - $f$ (pitch)
+    - *Apparent change in frequency* as an object moves past a stationary object
+    - If object is moving towards us, the emission-line spectrum will be blue shifted
+    - If object is moving away from us, the emission-line spectrum will be red shifted
+    - Highly eccentric orbits look like ocean waves on doppler shift data
+    - Lower eccentric orbits look like a sine wave
 
 -------------------------------
 # Portfolio
@@ -565,5 +693,3 @@ Data taken from [Aurora Forecast][16] - March 6, 2016 at 2250 to March 8, 2016 a
 
 [0]: http://solarsystem.nasa.gov/missions/cassini
 [1]:http://solarsystem.nasa.gov/missions/voyager2/indepth
-
-
